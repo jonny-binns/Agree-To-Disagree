@@ -1,0 +1,2 @@
+con = conclusion
+prem = premise
