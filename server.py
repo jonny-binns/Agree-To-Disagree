@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
+import translation as t
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
@@ -13,6 +14,10 @@ def answers_mode(answer=None, prompt=None, proArgument=None, conArgument=None):
         #add answer to the databse
         return redirect(url_for('answers_mode'))
     else:
+        #call method to read in from file
+
+
+        #set variables to correct values
         prompt = "this is an example prompt"
         proArgument = "this is an example argument in support of the prompt"
         conArgument = "this is an example argument in opporsition of the prompt"

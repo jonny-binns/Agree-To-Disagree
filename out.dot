@@ -1,14 +1,10 @@
-digraph SADFace {node [style="filled"]"8c3608ac-5fd3-4271-a625-b9b74b392444" [label="the beatles are the best\nband of all time"] [shape=box, style=rounded];
-"e24d2d21-daca-4da2-8e5e-1c571d1fe0c4" [label="inference"] [colorscheme=X11, fillcolor=cornsilk4, shape=diamond];
-"0a67e3ba-2e97-47fc-9d18-aa43690b6641" [label="their albums rank among\nthe highest of all time"] [shape=box, style=rounded];
-"ab6d518c-4869-422a-bd46-b69926e9db47" [label="inference"] [colorscheme=X11, fillcolor=cornsilk4, shape=diamond];
-"75d80e5d-33d4-498b-80b7-bdaaf6bbafba" [label="pink floyd explored more\nmusically"] [shape=box, style=rounded];
-"8f71137b-4cc9-46ec-b132-325f84bcbdab" [label="conflict"] [colorscheme=X11, fillcolor=firebrick2, shape=diamond];
-"97745395-7d32-459f-a540-0aa293b43a3c" [label="according to rolling\nstone pet sounds by the\nbeach boys is better than\nany beatles album"] [shape=box, style=rounded];
-"e24d2d21-daca-4da2-8e5e-1c571d1fe0c4" -> "8c3608ac-5fd3-4271-a625-b9b74b392444";
-"0a67e3ba-2e97-47fc-9d18-aa43690b6641" -> "e24d2d21-daca-4da2-8e5e-1c571d1fe0c4";
-"ab6d518c-4869-422a-bd46-b69926e9db47" -> "8c3608ac-5fd3-4271-a625-b9b74b392444";
-"75d80e5d-33d4-498b-80b7-bdaaf6bbafba" -> "ab6d518c-4869-422a-bd46-b69926e9db47";
-"8f71137b-4cc9-46ec-b132-325f84bcbdab" -> "0a67e3ba-2e97-47fc-9d18-aa43690b6641";
-"97745395-7d32-459f-a540-0aa293b43a3c" -> "8f71137b-4cc9-46ec-b132-325f84bcbdab";
+digraph SADFace {node [style="filled"]"1f60989b-f02f-4fab-befc-0d25a71c6bb8" [label="The beatles are the best\nband of all time"] [shape=box, style=rounded];
+"c05edee8-e141-4000-8dd4-48821c2aebb3" [label="support"] [colorscheme=X11, fillcolor=darkolivegreen3, shape=diamond];
+"5e2ec11d-35e7-4773-9bb5-4a9b95a50660" [label="their albums rank among\nthe highest of all time"] [shape=box, style=rounded];
+"cb560c3c-0f60-4591-9071-4a9710939bf1" [label="conflict"] [colorscheme=X11, fillcolor=firebrick2, shape=diamond];
+"8c3d3477-cc4d-4644-9430-b16861cc4074" [label="pink floyd explored more\nmusically"] [shape=box, style=rounded];
+"c05edee8-e141-4000-8dd4-48821c2aebb3" -> "1f60989b-f02f-4fab-befc-0d25a71c6bb8";
+"5e2ec11d-35e7-4773-9bb5-4a9b95a50660" -> "c05edee8-e141-4000-8dd4-48821c2aebb3";
+"cb560c3c-0f60-4591-9071-4a9710939bf1" -> "1f60989b-f02f-4fab-befc-0d25a71c6bb8";
+"8c3d3477-cc4d-4644-9430-b16861cc4074" -> "cb560c3c-0f60-4591-9071-4a9710939bf1";
 }

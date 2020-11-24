@@ -1,0 +1,81 @@
+{
+    "edges": [
+        {
+            "id": "2db3bd0e-3f24-4fe4-89ee-020e1d87e044",
+            "source_id": "4a2c5c96-5d5d-4821-b239-9303b7efc998",
+            "target_id": "84252d62-9c64-4bfc-9e14-621c4c5bed91"
+        },
+        {
+            "id": "2d4aad84-1627-4195-a3d6-707949aa34fe",
+            "source_id": "b5f3608a-5061-447f-8132-1b2546b6cca3",
+            "target_id": "4a2c5c96-5d5d-4821-b239-9303b7efc998"
+        },
+        {
+            "id": "b2886ca7-e732-44f1-93ae-3ac730d58d21",
+            "source_id": "397e6193-0639-4069-8290-cd75a610a89e",
+            "target_id": "84252d62-9c64-4bfc-9e14-621c4c5bed91"
+        },
+        {
+            "id": "dbba51d4-584a-4c3f-8702-e1cefa324cb7",
+            "source_id": "59cadbdd-15ec-419d-983a-e71a75cc214b",
+            "target_id": "397e6193-0639-4069-8290-cd75a610a89e"
+        }
+    ],
+    "metadata": {
+        "core": {
+            "analyst_email": "jonny.binns@email.com",
+            "analyst_name": "jonny binns",
+            "created": "2020-11-24T19:43:18",
+            "edited": "2020-11-24T19:43:18",
+            "id": "38355fd4-020d-4115-9cc4-08ac9920782c",
+            "title": "test argument",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "84252d62-9c64-4bfc-9e14-621c4c5bed91",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "The beatles are the best band of all time",
+            "type": "atom"
+        },
+        {
+            "id": "4a2c5c96-5d5d-4821-b239-9303b7efc998",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "b5f3608a-5061-447f-8132-1b2546b6cca3",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "their albums rank among the highest of all time",
+            "type": "atom"
+        },
+        {
+            "id": "397e6193-0639-4069-8290-cd75a610a89e",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "59cadbdd-15ec-419d-983a-e71a75cc214b",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "pink floyd explored more musically",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}
