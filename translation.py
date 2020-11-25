@@ -1,16 +1,45 @@
 import sadface as sf
+from argument import Argument
+import json
 
 #method to read in form SADFace doc and take variables out
 def getArguments():
-    sf.config.init("SADFace/test.cfg")
-    #sf.initialise()
-    #import document to sf
-    f = sf.new_sadface()
-    f = sf.load_from_file("saves.json")
-    fa = sf.list_arguments()
-    print(fa)
-    #list_atoms
+
+    #x = sf.load_from_file("saves.json")
+    #atoms = []
+    #for node in x["nodes"]:
+    #    if "atom" == node["type"]:
+    #        tmp = {}
+    #        tmp["id"] = node["id"]
+    #        tmp["text"] = node["text"]
+    #        atoms.append(tmp)
+    #print(atoms)
+
+
+    #make list of arguments
+    #loop through json file 
+        #pick out scheme 
+            #get name and set argument.type to scheme name
+        #pick out text when type is atom
+            #set text to text 
+
+    #arguments = []
+    #for node in x["nodes"]:
+    #    if "atom" == node["type"]:
+    #        if node-1 < 1:
+    #            a = Argument(node["text"], "base")
+    #        else:
+    #            a = Argument(node["text"], node-1["name"])
+    #        argument.append(a)
+
+    #for a in arguments:
+    #    Print(a)    
+
+    sd = {}
+    
     return None
 
 
-test = getArguments()
+
+#main bit
+getArguments()
