@@ -21,7 +21,7 @@ oppose = "pink floyd explored more musically"
 sf.add_conflict(None, sf.get_atom_id("The beatles are the best band of all time"), oppose, None)
 
 
-print(sf.prettyprint())
+print(sf.sd)
 #dot = sf.export_dot()#trad=False)    # Uncomment to use the brewer colourscheme
 #with open('out.dot', 'w') as file:
     #file.write(dot)
