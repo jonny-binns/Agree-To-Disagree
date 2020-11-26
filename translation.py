@@ -4,10 +4,11 @@ import json
 
 #method to read in form SADFace doc and take variables out
 def getArguments():
-    sd = sf.initialise()
-    sd = sf.load_from_file("saves.json")
-    sd = sf.prettyprint()
-    print(sd)
+    sf.initialise()
+    x = sf.load_from_file("saves.json")
+    #use import json
+    sf.sd = sf.import_json(x)
+    print()
 
     return None
 
