@@ -4,12 +4,12 @@ import json
 
 #method to read in form SADFace doc and take variables out
 def getArguments():
-    sf.initialise()
-    x = sf.load_from_file("saves.json")
-    #use import json
-    sf.sd = sf.import_json(x)
-    print()
-
+    sfdoc = sf.load_from_file("saves.json")
+    result, problems = sf.validation.verify(sf.get_document())
+    if result:
+        print(" ,".join(problems))
+    else:
+        print(sf.prettyprint())
     return None
 
 
