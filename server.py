@@ -27,13 +27,6 @@ def answers_mode(answer=None, prompt=None, proArgument=None, conArgument=None):
         #proArgument = "this is an example argument in support of the prompt"
         #conArgument = "this is an example argument in opporsition of the prompt"
         return render_template('ArgumentMode.html', prompt=prompt, proArgument=proArgument, conArgument=conArgument)
-
-@app.route('/pureTest/', methods=['GET'])
-def pure_test():
-    prompt = "this is an example prompt"
-    proArgument = "this is an example argument in support of the prompt"
-    conArgument = "this is an example argument in opporsition of the prompt"
-    return render_template('ArgumentModePureTest.html', prompt=prompt, proArgument=proArgument, conArgument=conArgument)
     
 
 if __name__ == "__main__":
