@@ -1,8 +1,24 @@
 <!DOCTYPE html>
 <head>
     <Title>Agree to Disagree</Title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet"/>
+    <!--<link href="{{ url_for('static', filename='css/menu.css') }}" rel="stylesheet"/>-->
 </head>
+<body>
+    <div class="d-flex flex-column">
+        <div class="p-2">
+            <div class="d-flex justify-content-center"><h1> Welcome to Agree to Disagree</h1></div>
+        </div>
+        <div class="p-2">
+            <div class="d-flex justify-content-center"><h2>please choose one of the options</h2></div>
+        </div>
+    </div>
 
-<h1> Welcome to Agree to Disagree</h1>
-<h2>please choose one of the options</h2>
-<a href="/answers"><h1>Answers mode</h1></a>
+    <div class="d-grid gap-2 col-8 mx-auto">
+        <a href="/answers" class="btn btn-outline-secondary" type="button" role="button">Answers Mode <br/> Text goes here to explain what the answers mode is</a>
+        <a href="/questions" class="btn btn-outline-secondary" type="button" role="button">Questions Mode <br/> Text goes here to explain what the questions mode is</a>
+        <a href="/vote" class="btn btn-outline-secondary" type="button" role="button">Voting Mode <br/> Text goes here to explain what the voting mode is</a>
+        <a href="/about" class="btn btn-outline-secondary" type="button" role="button">About Agree to Disagree</a>
+      </div>
+</body>

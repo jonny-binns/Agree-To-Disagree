@@ -2,10 +2,13 @@ from flask import Flask, render_template, request, redirect, url_for
 import translationtxt as t
 app = Flask(__name__)
 
+#route for the manu/home page
 @app.route('/', methods=['GET'])
 def menu():
     return render_template('Menu.html')
 
+
+#route for answers mode
 @app.route('/answers/', methods=['POST', 'GET'])
 def answers_mode(answer=None, prompt=None, proArgument=None, conArgument=None):
     if request.method == 'POST':
@@ -29,5 +32,23 @@ def answers_mode(answer=None, prompt=None, proArgument=None, conArgument=None):
         return render_template('ArgumentMode.html', prompt=prompt, proArgument=proArgument, conArgument=conArgument)
     
 
+#route for questions mode
+@app.route('/questions/', methods=['GET'])
+def questions_mode():
+    return render_template('QuestionsMode.html')
+
+
+#route for voting mode
+@app.route('/vote/', methods=['GET'])
+def voting_mode():
+    return render_template('VotingMode.html')
+
+
+#route for about page
+@app.route('/about/', methods=['GET'])
+def about():
+    return render_template('About.html')
+
+    
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
