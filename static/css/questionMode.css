@@ -1,4 +1,4 @@
-/*overriding colours of navbar light to my colour scheme*/
+  /*overriding colours of navbar light to my colour scheme*/
 .navbar-light{
     background-color: #72788d;
 }
@@ -35,64 +35,13 @@
     color: rgba(239,233,244,0.9);
   }
 
+  
   /*coloring the body of the page*/
   body {
     background-color: #efe9f4;
     color: #1b1b1e;
   }
 
-  /*colour success button, used for agree statements*/
-  .btn-outline-success {
-    color: #1b1b1e;
-    border-color: #5fad41;
-  }
-  .btn-outline-success:hover {
-    color: #ffffff;
-    background-color: #5fad41;
-    border-color: #5fad41;
-  }
-  .btn-check:focus + .btn-outline-success, .btn-outline-success:focus {
-    box-shadow: 0 0 0 0.25rem rgba(95,173,65, 0.5);
-  }
-  .btn-check:checked + .btn-outline-success, .btn-check:active + .btn-outline-success, .btn-outline-success:active, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show {
-    color: #ffffff;
-    background-color: #5fad41;
-    border-color: #5fad41;
-  }
-  .btn-check:checked + .btn-outline-success:focus, .btn-check:active + .btn-outline-success:focus, .btn-outline-success:active:focus, .btn-outline-success.active:focus, .btn-outline-success.dropdown-toggle.show:focus {
-    box-shadow: 0 0 0 0.25rem rgba(95,173,65, 0.5);
-  }
-  .btn-outline-success:disabled, .btn-outline-success.disabled {
-    color: #5fad41;
-    background-color: transparent;
-  }
-
-  /*colour danger button, used for disagree statements*/
-  .btn-outline-danger {
-    color: #1b1b1e;
-    border-color: #ff7f11;
-  }
-  .btn-outline-danger:hover {
-    color: #fff;
-    background-color: #ff7f11;
-    border-color: #ff7f11;
-  }
-  .btn-check:focus + .btn-outline-danger, .btn-outline-danger:focus {
-    box-shadow: 0 0 0 0.25rem rgba(255,127,17,0.5);
-  }
-  .btn-check:checked + .btn-outline-danger, .btn-check:active + .btn-outline-danger, .btn-outline-danger:active, .btn-outline-danger.active, .btn-outline-danger.dropdown-toggle.show {
-    color: #fff;
-    background-color: #ff7f11;
-    border-color: #ff7f11;
-  }
-  .btn-check:checked + .btn-outline-danger:focus, .btn-check:active + .btn-outline-danger:focus, .btn-outline-danger:active:focus, .btn-outline-danger.active:focus, .btn-outline-danger.dropdown-toggle.show:focus {
-    box-shadow: 0 0 0 0.25rem rgba((255,127,17,0.5));
-  }
-  .btn-outline-danger:disabled, .btn-outline-danger.disabled {
-    color: #ff7f11;
-    background-color: transparent;
-  }
-  
 
   /*colour secondary buttons, used for general butttons*/
   .btn-outline-secondary {
@@ -122,7 +71,7 @@
 
 
   /*colour text area*/
-  #argument {
+  #newPrompt {
     background-color: #efe9f4;
     color: #1b1b1e;
   }

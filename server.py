@@ -33,15 +33,34 @@ def answers_mode(answer=None, prompt=None, proArgument=None, conArgument=None):
     
 
 #route for questions mode
-@app.route('/questions/', methods=['GET'])
+@app.route('/questions/', methods=['POST', 'GET'])
 def questions_mode():
-    return render_template('QuestionsMode.html')
+    if request.method == 'POST':
+        #add prompt to db
+        print("you did a post request")
+    else:
+        #call method to read in from file
+        arguments = t.getArguments()
+        prompt = arguments[0]
+        proArgument = arguments[1]
+        conArgument = arguments[2]
+
+        return render_template('QuestionsMode.html', prompt=prompt)
 
 
 #route for voting mode
-@app.route('/vote/', methods=['GET'])
+@app.route('/vote/', methods=['POST', 'GET'])
 def voting_mode():
-    return render_template('VotingMode.html')
+    if request.method == 'POST':
+        #add prompt to db
+        print("you did a post request")
+    else:
+        arguments = t.getArguments()
+        prompt = arguments[0]
+        proArgument = arguments[1]
+        conArgument = arguments[2]
+
+        return render_template('VotingMode.html', prompt=prompt, proArgument=proArgument, conArgument=conArgument)
 
 
 #route for about page

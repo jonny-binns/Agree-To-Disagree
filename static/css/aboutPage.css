@@ -1,0 +1,43 @@
+  /*overriding colours of navbar light to my colour scheme*/
+  .navbar-light{
+    background-color: #72788d;
+}
+.navbar-light .navbar-brand {
+    color: #1b1b1e;
+  }
+  .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+    color: rgb(255, 255, 255);
+    
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #1b1b1e;
+  }
+  .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: rgb(255, 255, 255);
+  }
+  .navbar-light .navbar-nav .nav-link.disabled {
+    color: rgba(27,27,30,0.3);
+}
+  .navbar-light .navbar-nav .show > .nav-link,
+  .navbar-light .navbar-nav .nav-link.active {
+    color: rgba(27,27,30,0.9);
+  }
+  .navbar-light .navbar-toggler {
+    color: rgba(114,120,141,0.55);
+    border-color: rgba(114,120,141,0.1);
+  }
+  .navbar-light .navbar-text {
+    color: rgba(27,27,30,0.55);
+  }
+  .navbar-light .navbar-text a,
+  .navbar-light .navbar-text a:hover,
+  .navbar-light .navbar-text a:focus {
+    color: rgba(239,233,244,0.9);
+  }
+
+  
+  /*coloring the body of the page*/
+  body {
+    background-color: #efe9f4;
+    color: #1b1b1e;
+  }
