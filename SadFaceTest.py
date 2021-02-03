@@ -1,5 +1,6 @@
 import json
 import sadface as sf
+import fileManager as fm
 
 sf.config.init("SADFace/test.cfg")
 sf.initialise()
@@ -18,12 +19,13 @@ sf.add_support(None, support, sf.get_atom_id("The beatles are the best band of a
 
 #opposing point
 oppose = "pink floyd explored more musically"
-sf.add_conflict(None, sf.get_atom_id("The beatles are the best band of all time"), oppose, None)
+sf.add_conflict(None, oppose, sf.get_atom_id("The beatles are the best band of all time"), None)
 
 
-#print(sf.sd)
 #dot = sf.export_dot()#trad=False)    # Uncomment to use the brewer colourscheme
 #with open('out.dot', 'w') as file:
     #file.write(dot)
-
-sf.save("saves", "json")
+#sf.save("saves", "json")
+sfJSON = sf.export_json()
+#print(sfJSON)
+fm.createFile(sfJSON)

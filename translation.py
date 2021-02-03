@@ -1,20 +1,25 @@
-import sadface as sf
-from argument import Argument
-import json
+#these methods translate from the json encoded strings that datastore.py deals with to the variables needed in server.py
 
-#method to read in form SADFace doc and take variables out
-def getArguments():
-    sfdoc = sf.load_from_file("saves.json")
-    sf.set_doc(sfdoc)
-    result, problems = sf.validation.verify(sf.get_document())
-    if result:
-        print(" ,".join(problems))
-        print(sf.prettyprint())
-    else:
-        print(sf.prettyprint())
-    return None
+#set sadface doc
+#argument = json string
+#returns sf doc? or just status to say successful?
+
+#reset sf doc
+#returns status?
 
 
+#get random argument
+#no arguments
+#returns array with title, pro argument, con argument
 
-#main bit
-getArguments()
+#add argument
+#argument = array with title, parent argument, pro/con, text
+#returns status
+
+#add prompt
+#argument = prompt
+#returns status
+
+#add vote
+#argument = array with title and argument voted for
+#returns status

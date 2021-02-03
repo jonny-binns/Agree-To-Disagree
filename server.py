@@ -21,14 +21,14 @@ def answers_mode(answer=None, prompt=None, proArgument=None, conArgument=None):
     else:
         #call method to read in from file
         arguments = t.getArguments()
-        prompt = arguments[0]
-        proArgument = arguments[1]
-        conArgument = arguments[2]
+        #prompt = arguments[0]
+        #proArgument = arguments[1]
+        #conArgument = arguments[2]
 
         #set variables to correct values
-        #prompt = "this is an example prompt"
-        #proArgument = "this is an example argument in support of the prompt"
-        #conArgument = "this is an example argument in opporsition of the prompt"
+        prompt = "this is an example prompt"
+        proArgument = "this is an example argument in support of the prompt"
+        conArgument = "this is an example argument in opposition of the prompt"
         return render_template('ArgumentMode.html', prompt=prompt, proArgument=proArgument, conArgument=conArgument)
     
 
@@ -41,10 +41,10 @@ def questions_mode():
     else:
         #call method to read in from file
         arguments = t.getArguments()
-        prompt = arguments[0]
-        proArgument = arguments[1]
-        conArgument = arguments[2]
-
+        #prompt = arguments[0]
+        #proArgument = arguments[1]
+        #conArgument = arguments[2]
+        prompt = "this is an example prompt"
         return render_template('QuestionsMode.html', prompt=prompt)
 
 
@@ -56,10 +56,12 @@ def voting_mode():
         print("you did a post request")
     else:
         arguments = t.getArguments()
-        prompt = arguments[0]
-        proArgument = arguments[1]
-        conArgument = arguments[2]
-
+        #prompt = arguments[0]
+        #proArgument = arguments[1]
+        #conArgument = arguments[2]
+        prompt = "this is an example prompt"
+        proArgument = "this is an example argument in support of the prompt"
+        conArgument = "this is an example argument in opposition of the prompt"
         return render_template('VotingMode.html', prompt=prompt, proArgument=proArgument, conArgument=conArgument)
 
 
