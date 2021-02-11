@@ -1,0 +1,27 @@
+{
+    "edges": [],
+    "metadata": {
+        "core": {
+            "analyst_email": "user@email.address",
+            "analyst_name": "A User",
+            "claim": "969f1515-fc76-4b4b-9ee3-189b6aaf2152",
+            "created": "2021-02-07T14:57:47",
+            "edited": "2021-02-07T14:57:47",
+            "id": "c7628695-ee18-4eab-80f8-05b5ca4f727d",
+            "title": "The beatles are the best band of all time",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "969f1515-fc76-4b4b-9ee3-189b6aaf2152",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "The beatles are the best band of all time",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}

@@ -38,14 +38,14 @@
         <h2>Heres a random prompt from our databse for inspiration:</h2>
     </div>
     <div class="p-2 d-flex justify-content-center">
-        <h1 class="p-2">{{prompt}}</h1>
+        <h1 class="p-2">{{examplePrompt}}</h1>
     </div>
 
 
-    <form action="" method="POST" name="form" id="questionForm">
+    <form action="" method="POST" name="form" id="replyForm">
         <div class="d-flex justify-content-center">
             <button type="button" href="/answers/" class="btn btn-outline-secondary">Skip</button>
-            <textarea form="replyForm" type="text" name="answer" id="newPrompt" placeholder="Enter new debate prompt here"></textarea>
+            <textarea form="replyForm" type="text" name="prompt" id="prompt" placeholder="Enter new debate prompt here"></textarea>
             <input type="submit" name="submit" id="submit" class="btn btn-outline-secondary"></input>
         </div>
     </form>

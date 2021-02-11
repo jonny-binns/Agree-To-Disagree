@@ -40,32 +40,34 @@
     
 
     <form action="" method="POST" name="form" id="replyForm">
+      <input type="hidden" id="prompt" name="prompt" value="{{prompt}}"></input>
+      
         <div class="d-flex justify-content-center">
             <div class="p-2 btn-group" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="btnradio" id="proArgumentReply" value="proReply" autocomplete="off">
+                <input type="radio" class="btn-check" name="parent" id="proArgumentReply" value="{{proArgument}}" autocomplete="off">
                 <label class="btn btn-outline-success" for="proArgumentReply">{{proArgument}}</label></input>
               
-                <input type="radio" class="btn-check" name="btnradio" id="newReply" value="newReply" autocomplete="off">
+                <input type="radio" class="btn-check" name="parent" id="newReply" value="newReply" autocomplete="off">
                 <label class="btn btn-outline-secondary" for="newReply">Click here to respond directly to the debate prompt</label></input>
               
-                <input type="radio" class="btn-check" name="btnradio" id="conArgumentReply" value="conReply" autocomplete="off">
+                <input type="radio" class="btn-check" name="parent" id="conArgumentReply" value="{{conArgument}}" autocomplete="off">
                 <label class="btn btn-outline-danger" for="conArgumentReply">{{conArgument}}</label></input>
             </div>
         </div>
 
         <div class="d-flex justify-content-center">
             <div class="p-2 btn-group" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="btnradio" id="agreeArgument" value="agree" autocomplete="off">
+                <input type="radio" class="btn-check" name="stance" id="agreeArgument" value="agree" autocomplete="off">
                 <label class="btn btn-outline-success" for="agreeArgument">Agree</label></input>
 
-                <input type="radio" class="btn-check" name="btnradio" id="disArgument" value="disagree" autocomplete="off">
+                <input type="radio" class="btn-check" name="stance" id="disArgument" value="disagree" autocomplete="off">
                 <label class="btn btn-outline-danger" for="disArgument">Disagree</label></input>
             </div>
         </div>
 
         <div class="d-flex justify-content-center">
             <button type="button" href="/answers/" class="btn btn-outline-secondary">Skip</button>
-            <textarea form="replyForm" type="text" name="answer" id="argument" placeholder="Enter reply here"></textarea>
+            <textarea form="replyForm" type="text" name="newArgument" id="newArgument" placeholder="Enter reply here"></textarea>
             <input type="submit" name="submit" id="submit" class="btn btn-outline-secondary"></input>
         </div>
     </form>
