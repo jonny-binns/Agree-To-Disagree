@@ -50,11 +50,12 @@ def answers_mode(answer=None, prompt=None, proArgument=None, conArgument=None):
         
         arguments = t.getArguments(sfStr)
 
-        proArgument = arguments[0]
-        conArgument = arguments[1]
+        currentArgument = arguments[0]
+        proArgument = arguments[1]
+        conArgument = arguments[2]
 
         #display arguments/render template
-        return render_template('ArgumentMode.html', prompt=prompt, proArgument=proArgument, conArgument=conArgument)
+        return render_template('ArgumentMode.html', prompt=prompt, currentArgument=currentArgument, proArgument=proArgument, conArgument=conArgument)
     
 
 #route for questions mode

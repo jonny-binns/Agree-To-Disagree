@@ -1,6 +1,7 @@
 import sadface as sf
 import json
 import fileManager as fm
+import random
 #these methods translate from the json encoded strings that datastore.py deals with to the variables needed in server.py
 
 #gets the debates prompt
@@ -15,64 +16,65 @@ def getPrompt(sfStr):
 #no arguments
 #returns array with title, pro argument, con argument
 def getArguments(sfStr):
-    #set sf document
+    #set SF doc
     sfJSON = json.loads(sfStr)
     sf.set_doc(sfJSON)
 
-    #get connections to the claim
-    connections = sf.get_connections(sf.get_claim())
-    #print(connections)
+    #get atoms
+    atomlist = sf.list_atoms()
 
-    #get arguments
-    arglist = sf.list_arguments()
-    #print(arglist)
- 
-    #get target ids
-    #find the target ids that appear twice
-    #use these target ids to get assosicated source ids in all edges
-    #use the target id from that source id to get the text for the argument/weather its pro or con
+    #pick random atom
+    randInt = random.randint(0, len(atomlist)-1)
+    randArgID = atomlist[randInt]["id"]
+    currentArgument = atomlist[randInt]["text"]
 
-    #get duplicate target ids
-    targetIDs = []
-    for edge in connections:
-        #print(edge["target_id"])
-        targetIDs.append(edge["target_id"])
-    
-    duplicateTIDs = []
-    for i in range(0, len(targetIDs)):
-        for j in range(0, len(targetIDs)):
-            if(targetIDs[i] == targetIDs[j]):
-                duplicateTIDs.append(targetIDs[i])
-                
-    #removes duplicate entries, leaving only one copy of every target_id that shows up in 'connections' more than once
-    duplicateTIDs = list(set(duplicateTIDs)) 
+    #get children/connections of that argument
+    connections = sf.get_connections(randArgID)
 
-    #for i in range(0, (len(duplicateTIDs))):
-    #    print("t_id : " + str(duplicateTIDs[i]))
+    #loop through connections and if target_id = randArgID add the source_id in the list
+    #get the edges connecting the argument to its children
+    childConnection = []
+    for connection in connections:
+        if(connection["target_id"] == randArgID):
+            childConnection.append(connection["source_id"])
 
-    #find corresponding souce_ids 
-    #get edges
+    #get the atoms that are at the end of these edges
+    #loop through edges to find the source_id when the target_id is contained in childrenEdge
+    childrenEdgeID = []
     edges = sfJSON["edges"]
-    sourceIDs = []
-    for edge in edges:
-        if edge["target_id"] in duplicateTIDs:
-            sourceIDs.append(edge["source_id"])
+    for edge in edges: 
+        for i in range(0, len(childConnection)):
+            if(edge["target_id"] == childConnection[i]):
+                childrenEdgeID.append(edge["id"])
 
-    #get corresponding target_id to those source ids
-    argIDs = []
-    for edge in edges:
-        if edge["target_id"] in sourceIDs:
-            argIDs.append(edge["source_id"])
 
-    #print(argIDs)
-    #get atom text for that target_id
-    #make list to return
+    #for each edge in childrenEdgeID, source_id = atom with arg text, target_id = weather arg is support or conflict
     arguments = []
-    for i in range(0, len(argIDs)):
-        arguments.append(sf.get_atom_text(argIDs[i]))
+    proArgument = None
+    conArgument = None
 
+    #loop through edge in childrenEdgeID
+    for i in range(0, len(childrenEdgeID)):
+        edge = sf.get_edge(childrenEdgeID[i])
+        target = sf.get_atom(edge["target_id"])
+        stance = target["name"]
+        #check whether arg is support or conflict then set text to relevent variable
+        if(stance == "support"):
+            proArgument = sf.get_atom_text(edge["source_id"])
+        if(stance == "conflict"):
+            conArgument = sf.get_atom_text(edge["source_id"])
+        
+
+    #check that both pro/con argument are populated, if not populate with generic sentence
+    if(proArgument == None):
+        proArgument = "Looks like there is no supporting argument, to add one respond directly to the argument and click agree"
+    if(conArgument == None):
+        conArgument = "Looks like there is no oppoing argument, to add one respond directly to the argument and click disagree"
+
+    arguments.append(currentArgument)
+    arguments.append(proArgument)
+    arguments.append(conArgument)
     return arguments
-
 
 #add argument
 #argument = array with title, parent argument, pro/con, text
@@ -83,8 +85,6 @@ def addArgument(argArr):
     newArgument = argArr[1]
     parent = argArr[2]
     stance = argArr[3]
-
-    print(argArr[1])
     
     #get sf doc
     sfStr = fm.getFile(prompt+".json")

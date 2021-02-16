@@ -1,60 +1,70 @@
 {
     "edges": [
         {
-            "id": "d628ea63-f33f-4844-9977-fdf879b42ee6",
-            "source_id": "1e1d97e0-bc5b-4e15-b432-9b654b8f2e10",
-            "target_id": "4f0dcff3-4074-44df-9201-f6ed9095194a"
+            "id": "4a1dc31f-d136-41c0-985a-e0d9fed8bcf6",
+            "source_id": "6cf6593b-0f86-4adc-b3d8-a82d33eee1d7",
+            "target_id": "750154cb-5520-4c49-8fa4-de22f8009816"
         },
         {
-            "id": "aa734f78-f6b8-4ab2-be0e-29a52425dd38",
-            "source_id": "2d5593c3-ca60-4b57-97b3-d67cacb09cdb",
-            "target_id": "1e1d97e0-bc5b-4e15-b432-9b654b8f2e10"
+            "id": "e758e516-dbc6-4d74-8c14-8a6aff7d2e2b",
+            "source_id": "995f0614-ce44-4cfc-a3e0-e91ecb920269",
+            "target_id": "6cf6593b-0f86-4adc-b3d8-a82d33eee1d7"
         },
         {
-            "id": "b51edbfd-67c3-4b26-bf73-f3df9d3ab34c",
-            "source_id": "593cb3fc-79d6-42ca-a5ea-f6c97267bd0d",
-            "target_id": "4f0dcff3-4074-44df-9201-f6ed9095194a"
+            "id": "c88fafae-911d-4a80-9f06-0f318ba4bc72",
+            "source_id": "1d643b7f-2f22-4761-b7d1-d1f63954b21e",
+            "target_id": "750154cb-5520-4c49-8fa4-de22f8009816"
         },
         {
-            "id": "02cdd810-0528-48ac-8e5b-a4a443d0494d",
-            "source_id": "e9823505-6fc9-4ba3-8e4a-a0bcbc4ddd2b",
-            "target_id": "593cb3fc-79d6-42ca-a5ea-f6c97267bd0d"
+            "id": "29aa3371-e164-4e54-9589-ff67a4362343",
+            "source_id": "fb1326a1-f353-40c3-bbc7-e8cc75e17122",
+            "target_id": "1d643b7f-2f22-4761-b7d1-d1f63954b21e"
         },
         {
-            "id": "08333dee-bc81-4701-bcd9-7b9f9ff212d2",
-            "source_id": "62e355a8-37dd-4102-bdd6-9a96026fa02b",
-            "target_id": "2d5593c3-ca60-4b57-97b3-d67cacb09cdb"
+            "id": "273b113b-7bf7-48c1-a823-32f6327e9c9b",
+            "source_id": "d6961115-77f2-4446-a9c0-58c85cd8f79c",
+            "target_id": "995f0614-ce44-4cfc-a3e0-e91ecb920269"
         },
         {
-            "id": "5659d0c6-b3a3-4f02-9da1-a6ebd1d8628c",
-            "source_id": "f6a9bca5-3916-44c2-bdd1-6c32f1539fc9",
-            "target_id": "62e355a8-37dd-4102-bdd6-9a96026fa02b"
+            "id": "e613958b-0fc3-48c4-893a-fc6c76d2c230",
+            "source_id": "1900d6de-a6dc-4c1a-b55c-5755dad29b0b",
+            "target_id": "d6961115-77f2-4446-a9c0-58c85cd8f79c"
+        },
+        {
+            "id": "6611acc1-7846-4370-9452-9ddc78d9e659",
+            "source_id": "131f8481-3c66-4105-acf6-93465e9b3fae",
+            "target_id": "995f0614-ce44-4cfc-a3e0-e91ecb920269"
+        },
+        {
+            "id": "6af16c9e-f4a7-4b1a-9b78-2933d1070d76",
+            "source_id": "0fefd532-f3fd-4314-8ebc-737f6b3482c4",
+            "target_id": "131f8481-3c66-4105-acf6-93465e9b3fae"
         }
     ],
     "metadata": {
         "core": {
             "analyst_email": "jonny.binns@email.com",
             "analyst_name": "jonny binns",
-            "claim": "4f0dcff3-4074-44df-9201-f6ed9095194a",
-            "created": "2021-02-10T16:06:57",
-            "edited": "2021-02-10T16:06:57",
-            "id": "f999f6ee-73e8-413b-8aaf-246318cb98fb",
+            "claim": "750154cb-5520-4c49-8fa4-de22f8009816",
+            "created": "2021-02-13T13:47:30",
+            "edited": "2021-02-13T13:47:30",
+            "id": "b71cb6dc-de8f-411f-8af0-4aba6546d858",
             "title": "test argument",
             "version": "0.5"
         }
     },
     "nodes": [
         {
-            "id": "4f0dcff3-4074-44df-9201-f6ed9095194a",
+            "id": "750154cb-5520-4c49-8fa4-de22f8009816",
             "metadata": {
                 "core": {}
             },
             "sources": [],
-            "text": "The beatles are the best band of all time and ive added this to see what happens if i just write over a document",
+            "text": "test argument",
             "type": "atom"
         },
         {
-            "id": "1e1d97e0-bc5b-4e15-b432-9b654b8f2e10",
+            "id": "6cf6593b-0f86-4adc-b3d8-a82d33eee1d7",
             "metadata": {
                 "core": {}
             },
@@ -62,16 +72,16 @@
             "type": "scheme"
         },
         {
-            "id": "2d5593c3-ca60-4b57-97b3-d67cacb09cdb",
+            "id": "995f0614-ce44-4cfc-a3e0-e91ecb920269",
             "metadata": {
                 "core": {}
             },
             "sources": [],
-            "text": "their albums rank among the highest of all time",
+            "text": "level one agree",
             "type": "atom"
         },
         {
-            "id": "593cb3fc-79d6-42ca-a5ea-f6c97267bd0d",
+            "id": "1d643b7f-2f22-4761-b7d1-d1f63954b21e",
             "metadata": {
                 "core": {}
             },
@@ -79,16 +89,16 @@
             "type": "scheme"
         },
         {
-            "id": "e9823505-6fc9-4ba3-8e4a-a0bcbc4ddd2b",
+            "id": "fb1326a1-f353-40c3-bbc7-e8cc75e17122",
             "metadata": {
                 "core": {}
             },
             "sources": [],
-            "text": "pink floyd explored more musically",
+            "text": "level one disagree",
             "type": "atom"
         },
         {
-            "id": "62e355a8-37dd-4102-bdd6-9a96026fa02b",
+            "id": "d6961115-77f2-4446-a9c0-58c85cd8f79c",
             "metadata": {
                 "core": {}
             },
@@ -96,12 +106,29 @@
             "type": "scheme"
         },
         {
-            "id": "f6a9bca5-3916-44c2-bdd1-6c32f1539fc9",
+            "id": "1900d6de-a6dc-4c1a-b55c-5755dad29b0b",
             "metadata": {
                 "core": {}
             },
             "sources": [],
-            "text": "plz",
+            "text": "level two agree",
+            "type": "atom"
+        },
+        {
+            "id": "131f8481-3c66-4105-acf6-93465e9b3fae",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "0fefd532-f3fd-4314-8ebc-737f6b3482c4",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "level two disagree",
             "type": "atom"
         }
     ],
