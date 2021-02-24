@@ -15,23 +15,16 @@ def getRandomFile():
     #read from corresponding file
     f = open("arguments/"+fileList[randno], "r")
     fStr = f.read()
+    f.close()
+
     return fStr
 
 #gets a specific file based on its title
 def getFile(title):
-    #get list of file names
-    fileList = os.listdir("arguments")
-
-    #loop through file list and store file name when name=title
-    fileName = None
-    for x in range(len(fileList)):
-        if(fileList[x] == title):
-            fileName = fileList[x]
-
-
     #read from corresponding file
-    f = open("arguments/"+fileName, "r")
+    f = open("arguments/"+ title, "r")
     fStr = f.read()
+    f.close()
     return fStr
 
 #make new file
@@ -43,7 +36,13 @@ def createFile(sfStr):
     
     #get title then save as title.json
     title = sf.get_title()
-    sf.save("arguments/"+title, "json")
+    sf.save("arguments/"+title, ".json")
 
     #update to return error code
+    return None
+
+#delete specified file
+#only used for unit tests
+def deleteFile(title):
+    os.remove("arguments/" + title + ".json")
     return None

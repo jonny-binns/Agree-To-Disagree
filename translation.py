@@ -85,11 +85,16 @@ def addArgument(argArr):
     newArgument = argArr[1]
     parent = argArr[2]
     stance = argArr[3]
-    
+    #print(argArr)
+
     #get sf doc
     sfStr = fm.getFile(prompt+".json")
     sfJSON = json.loads(sfStr)
     sf.set_doc(sfJSON)
+
+    #deal with parent argument being the debate prompt
+    if(parent == "newReply"):
+        parent = sf.get_claim()
 
     #create argument
     if(stance == "agree"):

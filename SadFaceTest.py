@@ -3,12 +3,16 @@ import sadface as sf
 import fileManager as fm
 import translation as t
 
+
+'''
+fm.deleteFile("test argument")
+
+
 sfStr = fm.getFile("test argument.json")
 arguments = t.getArguments(sfStr)
 print(arguments)
 
 
-'''
 sf.config.init("SADFace/test.cfg")
 sf.initialise()
 

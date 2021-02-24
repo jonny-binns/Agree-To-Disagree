@@ -33,6 +33,7 @@ def answers_mode(answer=None, prompt=None, proArgument=None, conArgument=None):
 
         #add newArgument to db
         argArr = [prompt, newArgument, parent, stance]
+        #print(argArr)
         t.addArgument(argArr)
 
         return redirect(url_for('answers_mode'))
