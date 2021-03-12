@@ -1,0 +1,55 @@
+{
+    "edges": [
+        {
+            "id": "28b82da4-4327-41da-ae54-d5403a7c8819",
+            "source_id": "1759c3f1-4e7c-4e98-9d4e-f6f039e29bf3",
+            "target_id": "ac20b81f-d19c-4693-b9b0-df594d494914"
+        },
+        {
+            "id": "44b829c3-0965-4337-9bed-4f17b4ebc9bd",
+            "source_id": "7b886626-1dd5-4edf-93d8-d1bfb96c10dd",
+            "target_id": "1759c3f1-4e7c-4e98-9d4e-f6f039e29bf3"
+        }
+    ],
+    "metadata": {
+        "core": {
+            "analyst_email": "user@email.address",
+            "analyst_name": "A User",
+            "claim": "ac20b81f-d19c-4693-b9b0-df594d494914",
+            "created": "2021-03-12T17:28:27",
+            "edited": "2021-03-12T17:28:27",
+            "id": "ae2275c8-27f0-4a5e-8849-d2d223a696d1",
+            "title": "This website is great",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "ac20b81f-d19c-4693-b9b0-df594d494914",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "This website is great",
+            "type": "atom"
+        },
+        {
+            "id": "1759c3f1-4e7c-4e98-9d4e-f6f039e29bf3",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "7b886626-1dd5-4edf-93d8-d1bfb96c10dd",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "It was made by the best person",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}

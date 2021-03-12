@@ -19,6 +19,16 @@
             "id": "d3970338-5389-4008-a966-c75dc9e1c479",
             "source_id": "4f641345-52ca-4e9a-bbd2-972e867b1271",
             "target_id": "bbc65ac4-f39f-47b4-8e2f-17fcb3972a59"
+        },
+        {
+            "id": "909dc292-60b7-42a9-b2b7-d986eee5c8a2",
+            "source_id": "a3ac8b17-f3d3-4c9f-9d1a-f40db4fba198",
+            "target_id": "4f641345-52ca-4e9a-bbd2-972e867b1271"
+        },
+        {
+            "id": "5b6071d9-561a-4b96-9b34-051c88673c9f",
+            "source_id": "30027470-3281-4354-a3bb-38d77470bd38",
+            "target_id": "a3ac8b17-f3d3-4c9f-9d1a-f40db4fba198"
         }
     ],
     "metadata": {
@@ -75,6 +85,23 @@
             },
             "sources": [],
             "text": "Due to the size and age of the universe, there exists an extremely high number of planets on which life could emerge and thrive",
+            "type": "atom"
+        },
+        {
+            "id": "a3ac8b17-f3d3-4c9f-9d1a-f40db4fba198",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "30027470-3281-4354-a3bb-38d77470bd38",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "",
             "type": "atom"
         }
     ],

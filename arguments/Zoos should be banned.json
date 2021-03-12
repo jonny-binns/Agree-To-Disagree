@@ -19,6 +19,16 @@
             "id": "77417e04-7f0a-4989-85a2-60c349c539d6",
             "source_id": "5d4870fb-2383-41ee-8294-5626f87e1da6",
             "target_id": "7e559f9b-0cdb-4a1a-a9b6-58523b3692d0"
+        },
+        {
+            "id": "45d088fa-bd1a-4417-9b14-94a817326b27",
+            "source_id": "3a992cd0-f3d2-40ed-9df5-e446d918ad66",
+            "target_id": "a608e29c-dced-4392-b672-56c05f7bff82"
+        },
+        {
+            "id": "4eeda389-0e64-4fc2-9616-0a99e8dea88f",
+            "source_id": "48e70b24-cd4f-4811-bd57-4d86b7d18cff",
+            "target_id": "3a992cd0-f3d2-40ed-9df5-e446d918ad66"
         }
     ],
     "metadata": {
@@ -75,6 +85,23 @@
             },
             "sources": [],
             "text": "The benefits that zoos provide can be gained through more ethical methods",
+            "type": "atom"
+        },
+        {
+            "id": "3a992cd0-f3d2-40ed-9df5-e446d918ad66",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "48e70b24-cd4f-4811-bd57-4d86b7d18cff",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "But how fund?",
             "type": "atom"
         }
     ],

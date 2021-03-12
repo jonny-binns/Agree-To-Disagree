@@ -19,6 +19,16 @@
             "id": "c2af725e-87bf-4f2e-907b-cd8678368dc2",
             "source_id": "d20e0d0c-b206-48a8-ac2b-1a68619faa6c",
             "target_id": "cd93bde2-43ca-4621-b96f-90a321075df6"
+        },
+        {
+            "id": "f523e44a-1dc2-43ed-8072-df70e52e7a48",
+            "source_id": "7dafe64d-e524-4324-a699-7250063127d1",
+            "target_id": "59806218-c8e5-44eb-b02f-b193a0c4d585"
+        },
+        {
+            "id": "4069e94b-c896-4efd-aeee-5e157662c82a",
+            "source_id": "8305c456-6bf7-4119-9d90-b027baa1508b",
+            "target_id": "7dafe64d-e524-4324-a699-7250063127d1"
         }
     ],
     "metadata": {
@@ -75,6 +85,23 @@
             },
             "sources": [],
             "text": "If it were possible to simulate, it would be highly probable that one existed",
+            "type": "atom"
+        },
+        {
+            "id": "7dafe64d-e524-4324-a699-7250063127d1",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "8305c456-6bf7-4119-9d90-b027baa1508b",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "I don't agree",
             "type": "atom"
         }
     ],

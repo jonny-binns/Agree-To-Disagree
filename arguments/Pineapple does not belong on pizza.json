@@ -19,6 +19,26 @@
             "id": "249ab582-4ea4-43a0-bb5f-f42f2c3e5284",
             "source_id": "0e5d8812-120e-40b0-942f-80924b3c6953",
             "target_id": "c7744fc6-39bd-47ce-afc7-7ffd06428e2f"
+        },
+        {
+            "id": "4e00c289-cc25-41eb-94d5-2044b0305eac",
+            "source_id": "ec39cb7b-465d-4777-b3a4-6bb7ee407585",
+            "target_id": "716ef92a-78fc-4297-9d4a-0a5033512312"
+        },
+        {
+            "id": "9043b686-8dfb-4c1d-9487-cd9e80612117",
+            "source_id": "37a128d4-420c-4628-a1a3-6807e66877be",
+            "target_id": "ec39cb7b-465d-4777-b3a4-6bb7ee407585"
+        },
+        {
+            "id": "875ebd64-3198-4c05-ba33-ac4a60006729",
+            "source_id": "9eb55615-5a62-4b7b-a744-d8c39cf049de",
+            "target_id": "716ef92a-78fc-4297-9d4a-0a5033512312"
+        },
+        {
+            "id": "6c6a96e8-7e71-4caa-afa2-b2475009cdf3",
+            "source_id": "4a866073-ccfe-4ae8-bf08-b6e18f557852",
+            "target_id": "9eb55615-5a62-4b7b-a744-d8c39cf049de"
         }
     ],
     "metadata": {
@@ -75,6 +95,40 @@
             },
             "sources": [],
             "text": "Putting pineapple on pizza is not in keeping with the tradition of the dish",
+            "type": "atom"
+        },
+        {
+            "id": "ec39cb7b-465d-4777-b3a4-6bb7ee407585",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "37a128d4-420c-4628-a1a3-6807e66877be",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Pizzas are not a fruit salad",
+            "type": "atom"
+        },
+        {
+            "id": "9eb55615-5a62-4b7b-a744-d8c39cf049de",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "4a866073-ccfe-4ae8-bf08-b6e18f557852",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Pizza is (still) not a fruit salad",
             "type": "atom"
         }
     ],
