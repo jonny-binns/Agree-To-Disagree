@@ -1,5 +1,26 @@
 {
-    "edges": [],
+    "edges": [
+        {
+            "id": "21f3de79-6200-4948-ad2c-3988ffe2a583",
+            "source_id": "b0d90de7-5ccf-4ce2-b755-b690d970b4fc",
+            "target_id": "59806218-c8e5-44eb-b02f-b193a0c4d585"
+        },
+        {
+            "id": "50eea902-1487-4459-b9a6-5a67dc543a92",
+            "source_id": "081e17f9-8c9e-4d93-8ddb-1c3df6905e66",
+            "target_id": "b0d90de7-5ccf-4ce2-b755-b690d970b4fc"
+        },
+        {
+            "id": "14d650e2-5b4a-4b4e-9af1-90ed37025546",
+            "source_id": "cd93bde2-43ca-4621-b96f-90a321075df6",
+            "target_id": "59806218-c8e5-44eb-b02f-b193a0c4d585"
+        },
+        {
+            "id": "c2af725e-87bf-4f2e-907b-cd8678368dc2",
+            "source_id": "d20e0d0c-b206-48a8-ac2b-1a68619faa6c",
+            "target_id": "cd93bde2-43ca-4621-b96f-90a321075df6"
+        }
+    ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
@@ -20,6 +41,40 @@
             },
             "sources": [],
             "text": "We exist within a computer simulated reality",
+            "type": "atom"
+        },
+        {
+            "id": "b0d90de7-5ccf-4ce2-b755-b690d970b4fc",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "081e17f9-8c9e-4d93-8ddb-1c3df6905e66",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "There is no concrete evidence to suggest we exist within a simulated reality",
+            "type": "atom"
+        },
+        {
+            "id": "cd93bde2-43ca-4621-b96f-90a321075df6",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "d20e0d0c-b206-48a8-ac2b-1a68619faa6c",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "If it were possible to simulate, it would be highly probable that one existed",
             "type": "atom"
         }
     ],

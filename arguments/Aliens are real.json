@@ -1,5 +1,26 @@
 {
-    "edges": [],
+    "edges": [
+        {
+            "id": "10670bd6-5226-4d02-9e65-ded9dcb1e401",
+            "source_id": "4b473ad0-26ac-4018-a411-97df53fb29e8",
+            "target_id": "8e539155-7447-4e60-aace-a4897565ee0c"
+        },
+        {
+            "id": "fe116ea4-a5d8-405f-8fcd-bab27cc9012c",
+            "source_id": "9095a196-014e-4617-a88a-f41e4bfc85a2",
+            "target_id": "4b473ad0-26ac-4018-a411-97df53fb29e8"
+        },
+        {
+            "id": "34467743-1a62-4197-b2ce-9af4292f2a33",
+            "source_id": "bbc65ac4-f39f-47b4-8e2f-17fcb3972a59",
+            "target_id": "8e539155-7447-4e60-aace-a4897565ee0c"
+        },
+        {
+            "id": "d3970338-5389-4008-a966-c75dc9e1c479",
+            "source_id": "4f641345-52ca-4e9a-bbd2-972e867b1271",
+            "target_id": "bbc65ac4-f39f-47b4-8e2f-17fcb3972a59"
+        }
+    ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
@@ -20,6 +41,40 @@
             },
             "sources": [],
             "text": "Aliens are real",
+            "type": "atom"
+        },
+        {
+            "id": "4b473ad0-26ac-4018-a411-97df53fb29e8",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "9095a196-014e-4617-a88a-f41e4bfc85a2",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "There is no clear evidence for the existance of alien life",
+            "type": "atom"
+        },
+        {
+            "id": "bbc65ac4-f39f-47b4-8e2f-17fcb3972a59",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "4f641345-52ca-4e9a-bbd2-972e867b1271",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Due to the size and age of the universe, there exists an extremely high number of planets on which life could emerge and thrive",
             "type": "atom"
         }
     ],

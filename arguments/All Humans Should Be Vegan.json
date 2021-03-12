@@ -1,5 +1,16 @@
 {
-    "edges": [],
+    "edges": [
+        {
+            "id": "17d1cc03-bdb1-443d-9076-bb30c309b862",
+            "source_id": "2004435d-24f9-46f5-8db7-c16b0ce4e3b8",
+            "target_id": "a3ba6205-9d0e-4203-8456-af0187d372e6"
+        },
+        {
+            "id": "dfd54a80-ac0b-40f5-aad5-b91e5fc718ce",
+            "source_id": "960fabef-a6ac-414b-bbd3-9a8cb7d44e8b",
+            "target_id": "2004435d-24f9-46f5-8db7-c16b0ce4e3b8"
+        }
+    ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
@@ -20,6 +31,23 @@
             },
             "sources": [],
             "text": "All Humans Should Be Vegan",
+            "type": "atom"
+        },
+        {
+            "id": "2004435d-24f9-46f5-8db7-c16b0ce4e3b8",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "960fabef-a6ac-414b-bbd3-9a8cb7d44e8b",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "A vegan society has environmental advantages",
             "type": "atom"
         }
     ],

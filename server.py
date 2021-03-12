@@ -16,24 +16,18 @@ def menu():
 @app.route('/answers/', methods=['POST', 'GET'])
 def answers_mode(answer=None, prompt=None, proArgument=None, conArgument=None):
     if request.method == 'POST':
-        #print(request.form)
-        #answer = request.form['answer']
-        #replyTo = request.form.getlist('reply')
-        #add to db
-        #t.addArgument(answer)
-
         #get prompt
-        prompt = request.form['prompt']
+        prompt = request.form[str('prompt')]
         #get newArgument
-        newArgument = request.form['newArgument']
+        newArgument = request.form[str('newArgument')]
         #get what text newArgument is replying to
-        parent = request.form['parent']
+        parent = request.form[str('parent')]
         #get whether newArgument is agreeing or disagreeing
-        stance = request.form['stance']
+        stance = request.form[str('stance')]
 
         #add newArgument to db
         argArr = [prompt, newArgument, parent, stance]
-        #print(argArr)
+        print("server. 30. argArr" + str(argArr))
         t.addArgument(argArr)
 
         return redirect(url_for('answers_mode'))

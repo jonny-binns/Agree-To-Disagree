@@ -34,9 +34,12 @@ def createFile(sfStr):
     sfJSON = json.loads(sfStr)
     sf.set_doc(sfJSON)
     
+    #print(sf.prettyprint())
     #get title then save as title.json
     title = sf.get_title()
-    sf.save("arguments/"+title, ".json")
+
+
+    sf.save("arguments/"+title + ".json")
 
     #update to return error code
     return None

@@ -1,5 +1,26 @@
 {
-    "edges": [],
+    "edges": [
+        {
+            "id": "89a23ef7-246b-424c-b031-88ed3ad0fdc0",
+            "source_id": "0b10664b-93db-44c2-b4a3-5e7317ee52eb",
+            "target_id": "c88849bb-fd8d-4df2-b081-552340dc6068"
+        },
+        {
+            "id": "b5c287b2-726a-4ad8-bb89-7d16895da134",
+            "source_id": "3650175e-cc0d-4430-9435-20cddbcdb081",
+            "target_id": "0b10664b-93db-44c2-b4a3-5e7317ee52eb"
+        },
+        {
+            "id": "1bd891da-f818-4c4a-bb6d-2ba453008f51",
+            "source_id": "d36137da-f732-409e-be9e-2f67015336a0",
+            "target_id": "c88849bb-fd8d-4df2-b081-552340dc6068"
+        },
+        {
+            "id": "69ea434c-48a9-414f-b47f-40fc5655b525",
+            "source_id": "63558af6-e5be-405c-8f1d-e0d158635df4",
+            "target_id": "d36137da-f732-409e-be9e-2f67015336a0"
+        }
+    ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
@@ -20,6 +41,40 @@
             },
             "sources": [],
             "text": "The Marvel Universe is better than the DC Universe",
+            "type": "atom"
+        },
+        {
+            "id": "0b10664b-93db-44c2-b4a3-5e7317ee52eb",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "3650175e-cc0d-4430-9435-20cddbcdb081",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "The modern marvel cinematic universe is of much higher quality than DC's",
+            "type": "atom"
+        },
+        {
+            "id": "d36137da-f732-409e-be9e-2f67015336a0",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "63558af6-e5be-405c-8f1d-e0d158635df4",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "DC have evolved their comics and characters much more than marvel, giving fans much more to look at",
             "type": "atom"
         }
     ],

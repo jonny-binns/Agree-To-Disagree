@@ -1,5 +1,26 @@
 {
-    "edges": [],
+    "edges": [
+        {
+            "id": "8fee268d-b648-4e49-9d2c-b5962810df7e",
+            "source_id": "f5a2c4a3-c1a9-408d-a3cd-c1765935f22a",
+            "target_id": "a608e29c-dced-4392-b672-56c05f7bff82"
+        },
+        {
+            "id": "af60e5ab-8139-4200-8564-05386dff431d",
+            "source_id": "53384d51-cd9e-4328-8abe-a8aae16f1c79",
+            "target_id": "f5a2c4a3-c1a9-408d-a3cd-c1765935f22a"
+        },
+        {
+            "id": "2634e0c9-700f-4fd8-a61e-0415b34fc68a",
+            "source_id": "7e559f9b-0cdb-4a1a-a9b6-58523b3692d0",
+            "target_id": "a608e29c-dced-4392-b672-56c05f7bff82"
+        },
+        {
+            "id": "77417e04-7f0a-4989-85a2-60c349c539d6",
+            "source_id": "5d4870fb-2383-41ee-8294-5626f87e1da6",
+            "target_id": "7e559f9b-0cdb-4a1a-a9b6-58523b3692d0"
+        }
+    ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
@@ -20,6 +41,40 @@
             },
             "sources": [],
             "text": "Zoos should be banned",
+            "type": "atom"
+        },
+        {
+            "id": "f5a2c4a3-c1a9-408d-a3cd-c1765935f22a",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "53384d51-cd9e-4328-8abe-a8aae16f1c79",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Zoos play a critical role in the conservation of endangered species",
+            "type": "atom"
+        },
+        {
+            "id": "7e559f9b-0cdb-4a1a-a9b6-58523b3692d0",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "5d4870fb-2383-41ee-8294-5626f87e1da6",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "The benefits that zoos provide can be gained through more ethical methods",
             "type": "atom"
         }
     ],

@@ -1,5 +1,16 @@
 {
-    "edges": [],
+    "edges": [
+        {
+            "id": "272086a4-ade4-4819-ba68-58046527a585",
+            "source_id": "5bc919b6-82ca-490f-85b2-cffa3b4806af",
+            "target_id": "46e6514f-59aa-4cf6-b20d-aa50635a9988"
+        },
+        {
+            "id": "69e71c7b-8d48-4a12-bc0a-5933bf4a9fac",
+            "source_id": "e1048cfd-4a66-408f-84da-098bb95c0c38",
+            "target_id": "5bc919b6-82ca-490f-85b2-cffa3b4806af"
+        }
+    ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
@@ -20,6 +31,23 @@
             },
             "sources": [],
             "text": "A non-monetary economy would be ideal",
+            "type": "atom"
+        },
+        {
+            "id": "5bc919b6-82ca-490f-85b2-cffa3b4806af",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "e1048cfd-4a66-408f-84da-098bb95c0c38",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "The trend towards automation will make many jobs obselete. A non-monetary economy is the best system to deal with the resulting unemployment",
             "type": "atom"
         }
     ],

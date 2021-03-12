@@ -69,7 +69,7 @@ def getArguments(sfStr):
     if(proArgument == None):
         proArgument = "Looks like there is no supporting argument, to add one respond directly to the argument and click agree"
     if(conArgument == None):
-        conArgument = "Looks like there is no oppoing argument, to add one respond directly to the argument and click disagree"
+        conArgument = "Looks like there is no opposing argument, to add one respond directly to the argument and click disagree"
 
     arguments.append(currentArgument)
     arguments.append(proArgument)
@@ -85,7 +85,6 @@ def addArgument(argArr):
     newArgument = argArr[1]
     parent = argArr[2]
     stance = argArr[3]
-    #print(argArr)
 
     #get sf doc
     sfStr = fm.getFile(prompt+".json")
@@ -94,14 +93,14 @@ def addArgument(argArr):
 
     #deal with parent argument being the debate prompt
     if(parent == "newReply"):
-        parent = sf.get_claim()
-
+        parent = prompt
+    
     #create argument
     if(stance == "agree"):
         sf.add_support(None, [newArgument], sf.get_atom_id(parent), None)
-    else:
+    if(stance == "disagree"):
         sf.add_conflict(None, newArgument, sf.get_atom_id(parent), None)
-    
+
     #write updated sfDoc to file
     sfJSONex = sf.export_json()
     fm.createFile(sfJSONex)

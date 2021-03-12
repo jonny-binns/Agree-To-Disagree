@@ -1,5 +1,26 @@
 {
-    "edges": [],
+    "edges": [
+        {
+            "id": "ea8cc906-2182-46f8-b3a9-6a86b7230274",
+            "source_id": "5692fb18-603d-4e22-8c08-876a55f46738",
+            "target_id": "716ef92a-78fc-4297-9d4a-0a5033512312"
+        },
+        {
+            "id": "31dae947-97b0-4ad3-beba-8e2446921d71",
+            "source_id": "9239d0c2-e365-4c74-8f95-728d2f7f3e0f",
+            "target_id": "5692fb18-603d-4e22-8c08-876a55f46738"
+        },
+        {
+            "id": "497dd664-ef26-45bf-a5b8-09744848024e",
+            "source_id": "c7744fc6-39bd-47ce-afc7-7ffd06428e2f",
+            "target_id": "716ef92a-78fc-4297-9d4a-0a5033512312"
+        },
+        {
+            "id": "249ab582-4ea4-43a0-bb5f-f42f2c3e5284",
+            "source_id": "0e5d8812-120e-40b0-942f-80924b3c6953",
+            "target_id": "c7744fc6-39bd-47ce-afc7-7ffd06428e2f"
+        }
+    ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
@@ -20,6 +41,40 @@
             },
             "sources": [],
             "text": "Pineapple does not belong on pizza",
+            "type": "atom"
+        },
+        {
+            "id": "5692fb18-603d-4e22-8c08-876a55f46738",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "9239d0c2-e365-4c74-8f95-728d2f7f3e0f",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "People should be free to put what they want on their pizzas",
+            "type": "atom"
+        },
+        {
+            "id": "c7744fc6-39bd-47ce-afc7-7ffd06428e2f",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "0e5d8812-120e-40b0-942f-80924b3c6953",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Putting pineapple on pizza is not in keeping with the tradition of the dish",
             "type": "atom"
         }
     ],
