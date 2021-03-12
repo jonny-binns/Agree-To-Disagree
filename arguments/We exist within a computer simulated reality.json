@@ -1,0 +1,27 @@
+{
+    "edges": [],
+    "metadata": {
+        "core": {
+            "analyst_email": "user@email.address",
+            "analyst_name": "A User",
+            "claim": "59806218-c8e5-44eb-b02f-b193a0c4d585",
+            "created": "2021-03-12T13:30:38",
+            "edited": "2021-03-12T13:30:38",
+            "id": "a8c18e31-8388-4576-adfe-d9e371143c69",
+            "title": "We exist within a computer simulated reality",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "59806218-c8e5-44eb-b02f-b193a0c4d585",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "We exist within a computer simulated reality",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}

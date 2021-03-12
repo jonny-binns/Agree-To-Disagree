@@ -1,0 +1,27 @@
+{
+    "edges": [],
+    "metadata": {
+        "core": {
+            "analyst_email": "user@email.address",
+            "analyst_name": "A User",
+            "claim": "a3ba6205-9d0e-4203-8456-af0187d372e6",
+            "created": "2021-03-12T13:28:37",
+            "edited": "2021-03-12T13:28:37",
+            "id": "0c09a357-0907-4ff8-9d52-f565c87934ec",
+            "title": "All Humans Should Be Vegan",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "a3ba6205-9d0e-4203-8456-af0187d372e6",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "All Humans Should Be Vegan",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}

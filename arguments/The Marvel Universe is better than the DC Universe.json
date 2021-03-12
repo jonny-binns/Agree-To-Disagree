@@ -1,0 +1,27 @@
+{
+    "edges": [],
+    "metadata": {
+        "core": {
+            "analyst_email": "user@email.address",
+            "analyst_name": "A User",
+            "claim": "c88849bb-fd8d-4df2-b081-552340dc6068",
+            "created": "2021-03-12T13:31:37",
+            "edited": "2021-03-12T13:31:37",
+            "id": "aa96f9d5-adb1-45d8-93c0-4de97163b6d1",
+            "title": "The Marvel Universe is better than the DC Universe",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "c88849bb-fd8d-4df2-b081-552340dc6068",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "The Marvel Universe is better than the DC Universe",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}

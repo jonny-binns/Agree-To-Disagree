@@ -1,0 +1,27 @@
+{
+    "edges": [],
+    "metadata": {
+        "core": {
+            "analyst_email": "user@email.address",
+            "analyst_name": "A User",
+            "claim": "8e539155-7447-4e60-aace-a4897565ee0c",
+            "created": "2021-03-12T13:31:54",
+            "edited": "2021-03-12T13:31:54",
+            "id": "00e7e03a-030b-4a45-a981-6338cc4b0d4e",
+            "title": "Aliens are real",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "8e539155-7447-4e60-aace-a4897565ee0c",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Aliens are real",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}

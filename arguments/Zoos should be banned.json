@@ -1,0 +1,27 @@
+{
+    "edges": [],
+    "metadata": {
+        "core": {
+            "analyst_email": "user@email.address",
+            "analyst_name": "A User",
+            "claim": "a608e29c-dced-4392-b672-56c05f7bff82",
+            "created": "2021-03-12T13:28:59",
+            "edited": "2021-03-12T13:28:59",
+            "id": "b7d591fb-b185-472e-a62f-7e48671ab4a2",
+            "title": "Zoos should be banned",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "a608e29c-dced-4392-b672-56c05f7bff82",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Zoos should be banned",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}

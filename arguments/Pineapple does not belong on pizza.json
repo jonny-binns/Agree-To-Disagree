@@ -1,0 +1,27 @@
+{
+    "edges": [],
+    "metadata": {
+        "core": {
+            "analyst_email": "user@email.address",
+            "analyst_name": "A User",
+            "claim": "716ef92a-78fc-4297-9d4a-0a5033512312",
+            "created": "2021-03-12T13:33:48",
+            "edited": "2021-03-12T13:33:48",
+            "id": "1acf7f49-c91e-4eaf-ac81-ede8674908f4",
+            "title": "Pineapple does not belong on pizza",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "716ef92a-78fc-4297-9d4a-0a5033512312",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Pineapple does not belong on pizza",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}
