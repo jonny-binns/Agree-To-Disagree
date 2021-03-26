@@ -1,3 +1,6 @@
+
+
+
 /*overriding colours of navbar light to my colour scheme*/
 .navbar-light{
     background-color: #72788d;
@@ -35,6 +38,7 @@
     color: rgba(239,233,244,0.9);
   }
 
+  
   /*coloring the body of the page*/
   body {
     background-color: #efe9f4;

@@ -1,6 +1,279 @@
 <!DOCTYPE html>
+<script>
+  function hideArgumentPage1(){
+    var x = document.getElementById("ArgumentPage1");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } 
+    else {
+      x.style.display = "none";
+    }
+  }
+
+  function printPrompt(){
+    document.getElementById("myButton1").value="{{prompt}}";
+  }
+
+  var selectedArgument;
+
+  //takes the argDataStr, and converts back into a 2d array
+  argDataStr = "{{argDataStr}}";
+  //removes uncessecary characters
+  argDataStr = argDataStr.replace(/\[/g, "");
+  argDataStr = argDataStr.replace(/\]/g, "");
+  argDataStr = argDataStr.replace(/'/g, "");
+  //"&#39;" is the code for '
+  argDataStr = argDataStr.replace(/&#39;/g,'');
+  argDataArr = argDataStr.split(',');
+
+  //convert argDataArr into a 2d array 
+  var argData = new Array(argDataArr.length/3);
+
+  for(i=0; i<argData.length; i++)
+  {
+    argData[i] = new Array(3);
+  }
+
+  ind = 0;
+  for(i=0; i<argDataArr.length/3; i++)
+  {
+    argData[i][0] = argDataArr[ind];
+    argData[i][1] = argDataArr[(ind+1)];
+    argData[i][2] = argDataArr[(ind+2)];
+    ind = ind + 3;
+  }
+
+  
+  function getPrompt(){
+    prompt = argData[0][1];
+    return prompt;
+  }
+
+  function toggleDiv(div){
+    var x = document.getElementById(div);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } 
+    else {
+      x.style.display = "none";
+    }
+  }
+
+  function showChildArguments(arg){
+    document.getElementById("AP2SelectedArgument").innerHTML = arg;
+
+    //show parent argument
+    //loop through arg data
+      //if arg has parent argument
+        //show
+    for(i=0; i<argData.length; i++)
+    {
+      if(argData[i][1] == arg)
+      {
+        parent = argData[i][0];
+      }
+    }
+
+    if(parent == getPrompt() || arg == getPrompt())
+    {
+      document.getElementById("AP2ParentArgument").style.visibility = "hidden";
+    }
+    
+    if(parent != "null")
+    {
+      document.getElementById("AP2ParentArgument").style.visibility = "visible";
+      document.getElementById("AP2ParentArgumentBut").innerHTML = parent;
+    }
+    
+    
+    //show prompt if needed
+      //if parent argument != prompt 
+        //show prompt
+
+    if(parent != "null" && parent != getPrompt())
+    {
+      document.getElementById("AP2Prompt").style.visibility = "visible";
+      document.getElementById("AP2Prompt").innerHTML = getPrompt();
+    }
+    else
+    {
+      document.getElementById("AP2Prompt").style.visibility = "hidden";
+    }
+
+    //show child arguments
+    arrSize = 0;
+    for(i=0; i<argDataArr.length/3; i++)
+    {
+      if((arg.trim()) == (argData[i][0].trim()))
+      {
+        arrSize++;
+      }
+    }
+
+    childArgArr = new Array(arrSize);
+    for(i=0; i<arrSize; i++)
+    {
+      childArgArr[i] = new Array(2);
+    }
+
+
+    ind = 0;
+    for(i=0; i<argDataArr.length/3; i++)
+    {
+      if((arg.trim()) == (argData[i][0].trim()))
+      {
+        childArgArr[ind][0] = argData[i][1];
+        childArgArr[ind][1] = argData[i][2];
+        ind++;
+      }
+    }
+
+    childPro = null;
+    childCon = null;
+    
+    //check children exist, if they do change value to true
+    for(i=0; i<childArgArr.length; i++)
+    {
+      if((childArgArr[i][1].trim()) == ("support".trim()))
+      {
+        childPro = "true";
+      }
+      if((childArgArr[i][1].trim()) == ("conflict".trim()))
+      {
+        childCon = "true";
+      }
+    }
+    
+    while(childPro == "true")
+    {
+      randInt = Math.floor((Math.random() * arrSize));
+      if((childArgArr[randInt][1].trim()) == ("support".trim()) && childPro == "true")
+      {
+        childPro = childArgArr[randInt][0];
+      }     
+    }
+
+    while(childCon == "true")
+    {
+      randInt = Math.floor((Math.random() * arrSize));
+      if((childArgArr[randInt][1].trim()) == ("conflict".trim()) && childCon == "true")
+      {
+        childCon = childArgArr[randInt][0];
+      }
+    }
+
+    //show pro argument
+    if(childPro != null)
+    {
+      document.getElementById("AP2Pro").style.visibility = "visible";
+      document.getElementById("AP2ProArgument").innerHTML = childPro;
+    }
+    else
+    {
+      document.getElementById("AP2Pro").style.visibility = "hidden";
+    }
+    //show con argument
+    if(childCon != null)
+    {
+      document.getElementById("AP2Con").style.visibility = "visible";
+      document.getElementById("AP2ConArgument").innerHTML = childCon;
+    }
+    else
+    {
+      document.getElementById("AP2Con").style.visibility = "hidden";
+    }
+  } 
+
+  function showArgumentPage1(){
+    //document.getElementById("ResponsePage").style.visibility = "visible";
+
+    document.getElementById("AP1Prompt").innerHTML = getPrompt();
+
+    //check for children otherwise dont show child button
+    if(argData.length == 1)
+    {
+      //toggleDiv("AP1ShowReplies")
+      document.getElementById("AP1ShowReplies").style.visibility = "hidden";
+    }
+
+
+    selectedArgument = getPrompt();
+    return selectedArgument
+  }
+
+  //set selected argument to the debate prompt
+  selectedArgument = showArgumentPage1();
+
+  function showArgumentPage2(){
+    //hide AP1
+    toggleDiv("ArgumentPage1");
+    //show AP2
+    toggleDiv("ArgumentPage2");
+
+    document.getElementById("AP2ParentArgument").style.visibility = "hidden";
+
+    //decide to show debate prompt
+    //decide to show previous argument
+    //show current selected argument
+    //showChildArguments(selectedArgument);
+
+
+    //reload on click
+    //select correct argument when respond button is clicked
+    //return selected argument
+
+  }
+
+
+  //add if else to check if show argument page 2 is null, if not then update value twice
+  //selectedArgument = showArgumentPage1();
+
+  function addResponse(arg){
+    //hide divs
+    //should add an if/else to check whether theyre being shown or not
+    if(arg.trim() == getPrompt().trim())
+    {
+      toggleDiv("ArgumentPage1");
+    }
+    else
+    {
+      toggleDiv("ArgumentPage2");
+    }
+
+    //show reply form
+    toggleDiv("ResponsePage");
+
+
+    //reply form
+    //(potentially show) top level argument  
+    //show currently selected argument
+    document.getElementById("responseSelectedArgument").innerHTML = arg;
+    //set parent argument and prompt in reply form
+    document.getElementById("formPrompt").value = getPrompt().trim();
+    document.getElementById("formParent").value = arg; 
+  }
+
+  function ResponseBack(){
+    toggleDiv("ResponsePage");
+
+    if(document.getElementById("responseSelectedArgument").innerHTML.trim() == getPrompt().trim())
+    {
+      toggleDiv("ArgumentPage1");
+    }
+    else
+    {
+      toggleDiv("ArgumentPage2");
+    }
+
+    
+  }
+
+</script>
+
+
+
 <head>
-    <Title>Answers Mode</Title>
+    <Title>Agree to Disagree</Title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet"/>
     <link href="{{ url_for('static', filename='css/argumentMode.css') }}" rel="stylesheet"/>
@@ -17,6 +290,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
+              <a class="nav-link" href="/answers">Answers Mode</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
               <a class="nav-link" href="/questions">Questions Mode</a>
             </li>
           </ul>
@@ -24,56 +302,122 @@
             <li class="nav-item">
               <a class="nav-link" href="/vote">Voting Mode</a>
             </li>
-          </ul>
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
-            </li>
-          </ul>
         </div>
     </nav>
 
 
-    <div class="p-2 d-flex justify-content-center">
-        <h1>Prompt: {{prompt}}</h1>
+  
+    <div class="container" id="ArgumentPage1">
+      <div class="row">
+        <div class="card text-center">
+          <div class="card-body">
+            <h1 class="card-text" id="AP1Prompt"></h1> 
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2 justify-content-center">
+          <button type="button" id ="AP1ShowReplies" onclick="showArgumentPage2(); showChildArguments(selectedArgument)" class="btn btn-outline-secondary btn-lg">Show Replies</button>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-2 justify-content-center">
+          <button type="button" onclick="addResponse(selectedArgument)" class="btn btn-outline-secondary btn-lg">Respond</button>
+        </div>
+        <div class="col-2"></div>
+      </div>  
+      <script type="text/javascript">showArgumentPage1();</script>
     </div>
 
-    <div class="p-2 d-flex justify-content-center">
-      <h2>Current Argument: {{currentArgument}}</h2>
-  </div>
+
+    <div class="container" id="ArgumentPage2">
+      <script type="text/javascript">toggleDiv("ArgumentPage2");</script>
+      <div class="row">
+        <div class="col-xs-12 center-block text-left">
+          <button type="button" class="btn btn-outline-secondary btn-lg" onclick='toggleDiv("ArgumentPage2"); toggleDiv("ArgumentPage1")'>Back</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 center-block text-center">
+          <h3 id="AP2Prompt"></h3>
+        </div>
+      </div>
+      <div id="AP2ParentArgument">
+        <div class="row">
+          <div class="col-xs-12 center-block text-center">
+            <button type="button" class="btn btn-outline-secondary btn-lg" id="AP2ParentArgumentBut" onclick='showChildArguments(document.getElementById("AP2ParentArgumentBut").innerHTML)'></button>
+          </div>
+        </div>
+        <div class="row">
+          <img src="{{ url_for('static', filename='ico/arrow-down.svg') }}" width="30" height="60"></img>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card text-center">
+          <div class="card-body">
+            <h1 class="card-text" id="AP2SelectedArgument"></h1>
+          </div>
+        </div>            
+        <div class="col-sm-6">
+          <div class="card" id="AP2Pro">
+            <button type="button" class="btn btn-outline-success btn-lg" id="AP2ProArgument" onclick='showChildArguments(document.getElementById("AP2ProArgument").innerHTML)'></button>
+              <button type="button" class="btn btn-outline-secondary btn-lg" id="AP2ProResponse" onclick='addResponse(document.getElementById("AP2ProArgument").innerHTML)'>Respond</button>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card" id="AP2Con">
+              <button type="button" class="btn btn-outline-danger btn-lg" id="AP2ConArgument" onclick='showChildArguments(document.getElementById("AP2ConArgument").innerHTML)'></button>
+              <button type="button" class="btn btn-outline-secondary btn-lg" id="AP2ConResponse" onclick='addResponse(document.getElementById("AP2ConArgument").innerHTML)'>Respond</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     
-
-    <form action="" method="POST" name="form" id="replyForm">
-      <input type="hidden" id="prompt" name="prompt" value="{{prompt}}"></input>
-      
-        <div class="d-flex justify-content-center">
-            <div class="p-2 btn-group" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="parent" id="proArgumentReply" value="{{proArgument}}" autocomplete="off">
-                <label class="btn btn-outline-success" for="proArgumentReply">{{proArgument}}</label></input>
-              
-                <input type="radio" class="btn-check" name="parent" id="newReply" value="newReply" autocomplete="off">
-                <label class="btn btn-outline-secondary" for="newReply">Click here to respond directly to the debate prompt</label></input>
-              
-                <input type="radio" class="btn-check" name="parent" id="conArgumentReply" value="{{conArgument}}" autocomplete="off">
-                <label class="btn btn-outline-danger" for="conArgumentReply">{{conArgument}}</label></input>
-            </div>
+    <div class="container" id="ResponsePage">
+      <script type="text/javascript">toggleDiv("ResponsePage");</script>
+      <div class="row">
+        <div class="col-xs-12 center-block text-left">
+          <button type="button" class="btn btn-outline-secondary btn-lg" onclick='ResponseBack()'>Back</button>
         </div>
-
-        <div class="d-flex justify-content-center">
-            <div class="p-2 btn-group" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="stance" id="agreeArgument" value="agree" autocomplete="off">
-                <label class="btn btn-outline-success" for="agreeArgument">Agree</label></input>
-
-                <input type="radio" class="btn-check" name="stance" id="disArgument" value="disagree" autocomplete="off">
-                <label class="btn btn-outline-danger" for="disArgument">Disagree</label></input>
-            </div>
+      </div>
+      <div class="row">
+        <div class="card text-center">
+          <div class="card-body">
+            <p class="card-text" id="responseSelectedArgument"><h1></h1></p>
+          </div>
         </div>
-
-        <div class="d-flex justify-content-center">
-            <button type="button" href="/answers/" class="btn btn-outline-secondary">Skip</button>
-            <textarea form="replyForm" type="text" name="newArgument" id="newArgument" placeholder="Enter reply here"></textarea>
+      </div>
+      <div class="row">
+        <div class="card">
+          <form action="" method="POST" name="form" id="replyForm">
+            <input type="hidden" id="formPrompt" name="formPrompt"></input>
+            <input type="hidden" id="formParent" name="formParent"></input>
+            <div class="d-flex justify-content-center">
+              <h3>Does your reply</h3>
+              <div class="p-2 btn-group" role="group" aria-label="Basic radio toggle button group">
+                  <input type="radio" class="btn-check" name="stance" id="agreeArgument" value="agree" autocomplete="off">
+                  <label class="btn btn-outline-success" for="agreeArgument">Agree</label></input>
+  
+                  <input type="radio" class="btn-check" name="stance" id="disArgument" value="disagree" autocomplete="off">
+                  <label class="btn btn-outline-danger" for="disArgument">Disagree</label></input>
+              </div>
+          </div>
+  
+          <div class="d-flex justify-content-center">
+              <textarea form="replyForm" type="text" name="newArgument" id="newArgument" placeholder="Enter reply here"></textarea>
+          </div>
+          <div class="d-flex justify-content-center">
             <input type="submit" name="submit" id="submit" class="btn btn-outline-secondary"></input>
+          </div>
         </div>
-    </form>
+      </div>
+    </div>
+   
+
+    <div class="d-flex justify-content-center relative-bottom">
+      <button type="button" onClick="history.go(0)"  class="btn btn-outline-primary btn-lg">Skip</button>
+    </div>
+
 </body>
 </html>

@@ -3,19 +3,11 @@ import sadface as sf
 import fileManager as fm
 import translation as t
 
-def testAddArg():
-    #will add arguments to the file created in test_addPrompt()
-    prompt = "test"
-    newArgument = "test agree"
-    parent = "test"
-    #maybe add another test for when stance is "disagree"
-    stance = "agree"
-    argArr = [prompt, newArgument, parent, stance]
-    t.addArgument(argArr)
-    for a in argArr:
-        print(type(a))
 
-testAddArg()
+sfStr = fm.getRandomFile()
+argData = t.getData(sfStr)
+print(str(argData))
+
 '''
 fm.deleteFile("test argument")
 

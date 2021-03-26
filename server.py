@@ -17,17 +17,19 @@ def menu():
 def answers_mode(answer=None, prompt=None, proArgument=None, conArgument=None):
     if request.method == 'POST':
         #get prompt
-        prompt = request.form[str('prompt')]
+        prompt = request.form[str('formPrompt')]
+        prompt = prompt.strip()
         #get newArgument
         newArgument = request.form[str('newArgument')]
         #get what text newArgument is replying to
-        parent = request.form[str('parent')]
+        parent = request.form[str('formParent')]
+        parent = parent.strip()
         #get whether newArgument is agreeing or disagreeing
         stance = request.form[str('stance')]
 
         #add newArgument to db
         argArr = [prompt, newArgument, parent, stance]
-        print("server. 30. argArr" + str(argArr))
+        #print("server. 30. argArr" + str(argArr))
         t.addArgument(argArr)
 
         return redirect(url_for('answers_mode'))
@@ -40,17 +42,25 @@ def answers_mode(answer=None, prompt=None, proArgument=None, conArgument=None):
         #read from random file
         sfStr = fm.getRandomFile()
 
-        #get prompt then two random, yet paired arguments
-        prompt = t.getPrompt(sfStr)
-        
-        arguments = t.getArguments(sfStr)
 
-        currentArgument = arguments[0]
-        proArgument = arguments[1]
-        conArgument = arguments[2]
+        #get prompt then two random, yet paired arguments
+        #prompt = t.getPrompt(sfStr)
+        
+        #arguments = t.getArguments(sfStr)
+
+        #currentArgument = arguments[0]
+        #proArgument = arguments[1]
+        #conArgument = arguments[2]
 
         #display arguments/render template
-        return render_template('ArgumentMode.html', prompt=prompt, currentArgument=currentArgument, proArgument=proArgument, conArgument=conArgument)
+        #return render_template('ArgumentMode.html', prompt=prompt, currentArgument=currentArgument, proArgument=proArgument, conArgument=conArgument
+        
+        #get all data from file then serialise
+        argData = t.getData(sfStr)
+
+        argDataStr = str(argData)
+        print(argDataStr)
+        return render_template('ArgumentMode.html', argDataStr=argDataStr)
     
 
 #route for questions mode

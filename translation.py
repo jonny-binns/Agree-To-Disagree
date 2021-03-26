@@ -76,6 +76,77 @@ def getArguments(sfStr):
     arguments.append(conArgument)
     return arguments
 
+
+def getData(sfStr):
+    #set SF doc
+    sfJSON = json.loads(sfStr)
+    sf.set_doc(sfJSON)
+
+    #create return array
+    #key for return array [parent text][atom text][atom stance]
+    cols = 3
+    rows = len(sf.list_atoms())
+    #initialises all elements to 'a'
+    data = [["a" for i in range(cols)]for j in range(rows)]
+    
+
+    #populate return array
+    #print(sf.list_atoms())
+
+    #add debate prompt as edge case
+    data[0][0] = "null"
+    data[0][1] = getPrompt(sfStr)
+    data[0][2] = "null"
+
+    #for each atom
+        #find parent text
+        #get atom text
+        #get stance
+    atoms = sf.list_atoms()
+
+    for i in range(1,len(atoms)):
+        #find parent text for atom
+        connections = sf.get_connections(atoms[i]["id"])
+        #loop through connections
+            #if connection.sourceID = atoms[i]["id"]
+                #parentTargetID = connection[targetID]
+        for con in connections:
+            if(con["source_id"] == atoms[i]["id"]):
+               targetID = con["target_id"]
+        
+        #loop through edges
+            #if edge.targetID = parentTargetID
+                #parentID = edge.sourceID
+        edges = sfJSON["edges"]
+        for edge in edges:
+            if(edge["source_id"] == targetID):
+                parentID = edge["target_id"]
+        
+        #get atom text for parentID
+        parent = sf.get_atom_text(parentID)
+
+        #get atom text
+        text = sf.get_atom_text(atoms[i]["id"])
+        
+        #get stance
+        #loop through connections
+        #if connection.sourceID = id
+            #get target ID
+        for con in connections:
+            if(con["source_id"] == atoms[i]["id"]):
+                targetID = con["target_id"]
+
+        #get name for target id
+        stanceAtom = sf.get_atom(targetID)
+        stance = stanceAtom["name"]
+        
+        data[i][0] = parent
+        data[i][1] = text
+        data[i][2] = stance 
+
+
+    return data    
+
 #add argument
 #argument = array with title, parent argument, pro/con, text
 #returns status
@@ -85,11 +156,12 @@ def addArgument(argArr):
     newArgument = argArr[1]
     parent = argArr[2]
     stance = argArr[3]
-
+    print(argArr)
     #get sf doc
     sfStr = fm.getFile(prompt+".json")
     sfJSON = json.loads(sfStr)
     sf.set_doc(sfJSON)
+    #sf.prettyprint()
 
     #deal with parent argument being the debate prompt
     if(parent == "newReply"):

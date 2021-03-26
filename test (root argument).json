@@ -1,0 +1,55 @@
+{
+    "edges": [
+        {
+            "id": "3b0aceb8-1f33-485f-84d1-ac66665333b7",
+            "source_id": "bb641eb0-6214-45b9-aabb-8e9d06d5caab",
+            "target_id": "423a3895-a553-4fe6-954c-e2420e8912c0"
+        },
+        {
+            "id": "3ed90316-1777-457a-b81a-1a329a90a41f",
+            "source_id": "b9cbde3e-0d59-4fbf-afe5-7df9d94d2cc8",
+            "target_id": "bb641eb0-6214-45b9-aabb-8e9d06d5caab"
+        }
+    ],
+    "metadata": {
+        "core": {
+            "analyst_email": "user@email.address",
+            "analyst_name": "A User",
+            "claim": "423a3895-a553-4fe6-954c-e2420e8912c0",
+            "created": "2021-03-13T13:22:06",
+            "edited": "2021-03-13T13:22:06",
+            "id": "dd22d2b9-5282-4448-b8c9-adfa4687a1b2",
+            "title": "test (root argument)",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "423a3895-a553-4fe6-954c-e2420e8912c0",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "test (root argument)",
+            "type": "atom"
+        },
+        {
+            "id": "bb641eb0-6214-45b9-aabb-8e9d06d5caab",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "b9cbde3e-0d59-4fbf-afe5-7df9d94d2cc8",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "test new gui reply",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}
