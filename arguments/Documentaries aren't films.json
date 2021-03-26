@@ -1,0 +1,27 @@
+{
+    "edges": [],
+    "metadata": {
+        "core": {
+            "analyst_email": "user@email.address",
+            "analyst_name": "A User",
+            "claim": "23eefaeb-9a52-49c4-8bcb-6805af327dab",
+            "created": "2021-03-26T14:40:23",
+            "edited": "2021-03-26T14:40:23",
+            "id": "81a8e6c7-9632-4944-b9d8-2543b2d67685",
+            "title": "Documentaries aren't films",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "23eefaeb-9a52-49c4-8bcb-6805af327dab",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Documentaries aren't films",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}

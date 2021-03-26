@@ -9,6 +9,16 @@
             "id": "dfd54a80-ac0b-40f5-aad5-b91e5fc718ce",
             "source_id": "960fabef-a6ac-414b-bbd3-9a8cb7d44e8b",
             "target_id": "2004435d-24f9-46f5-8db7-c16b0ce4e3b8"
+        },
+        {
+            "id": "f51f3ad6-2ded-4811-8e58-762672b1d2df",
+            "source_id": "dcc864ec-64c9-47af-bc7d-80905a448e6f",
+            "target_id": "960fabef-a6ac-414b-bbd3-9a8cb7d44e8b"
+        },
+        {
+            "id": "6fe6a370-a3ab-4599-b327-d714883ddae1",
+            "source_id": "29af5f20-71db-4e53-a336-432ff286821b",
+            "target_id": "dcc864ec-64c9-47af-bc7d-80905a448e6f"
         }
     ],
     "metadata": {
@@ -48,6 +58,23 @@
             },
             "sources": [],
             "text": "A vegan society has environmental advantages",
+            "type": "atom"
+        },
+        {
+            "id": "dcc864ec-64c9-47af-bc7d-80905a448e6f",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "29af5f20-71db-4e53-a336-432ff286821b",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "But beeeef",
             "type": "atom"
         }
     ],
