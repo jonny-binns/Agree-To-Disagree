@@ -1,41 +1,41 @@
 {
     "edges": [
         {
-            "id": "89a23ef7-246b-424c-b031-88ed3ad0fdc0",
-            "source_id": "0b10664b-93db-44c2-b4a3-5e7317ee52eb",
-            "target_id": "c88849bb-fd8d-4df2-b081-552340dc6068"
+            "id": "d1b40882-dda7-4834-b291-a125435e96ed",
+            "source_id": "9765ce09-6dbb-4684-b41f-0c480a7d668e",
+            "target_id": "5db6d871-1d31-4dc9-ad08-d6272201e424"
         },
         {
-            "id": "b5c287b2-726a-4ad8-bb89-7d16895da134",
-            "source_id": "3650175e-cc0d-4430-9435-20cddbcdb081",
-            "target_id": "0b10664b-93db-44c2-b4a3-5e7317ee52eb"
+            "id": "f494b691-c289-43c6-8503-ee7c0970d25a",
+            "source_id": "22e2acf1-b157-44e6-a5ba-c2bc4d3980de",
+            "target_id": "9765ce09-6dbb-4684-b41f-0c480a7d668e"
         },
         {
-            "id": "1bd891da-f818-4c4a-bb6d-2ba453008f51",
-            "source_id": "d36137da-f732-409e-be9e-2f67015336a0",
-            "target_id": "c88849bb-fd8d-4df2-b081-552340dc6068"
+            "id": "85834faf-207d-45eb-b095-99c048e35b23",
+            "source_id": "4927e52d-4649-4a9f-ae1e-0e23065d44d9",
+            "target_id": "5db6d871-1d31-4dc9-ad08-d6272201e424"
         },
         {
-            "id": "69ea434c-48a9-414f-b47f-40fc5655b525",
-            "source_id": "63558af6-e5be-405c-8f1d-e0d158635df4",
-            "target_id": "d36137da-f732-409e-be9e-2f67015336a0"
+            "id": "dc5ea4b6-a0b7-49de-97cd-52b76725d4c8",
+            "source_id": "31b03cd9-71ac-4cab-85d0-445fcc3e7221",
+            "target_id": "4927e52d-4649-4a9f-ae1e-0e23065d44d9"
         }
     ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
             "analyst_name": "A User",
-            "claim": "c88849bb-fd8d-4df2-b081-552340dc6068",
-            "created": "2021-03-12T13:31:37",
-            "edited": "2021-03-12T13:31:37",
-            "id": "aa96f9d5-adb1-45d8-93c0-4de97163b6d1",
+            "claim": "5db6d871-1d31-4dc9-ad08-d6272201e424",
+            "created": "2021-03-30T18:01:39",
+            "edited": "2021-03-30T18:01:39",
+            "id": "8763ffe4-7c6a-4894-853c-f081b87d4320",
             "title": "The Marvel Universe is better than the DC Universe",
             "version": "0.5"
         }
     },
     "nodes": [
         {
-            "id": "c88849bb-fd8d-4df2-b081-552340dc6068",
+            "id": "5db6d871-1d31-4dc9-ad08-d6272201e424",
             "metadata": {
                 "core": {}
             },
@@ -44,7 +44,7 @@
             "type": "atom"
         },
         {
-            "id": "0b10664b-93db-44c2-b4a3-5e7317ee52eb",
+            "id": "9765ce09-6dbb-4684-b41f-0c480a7d668e",
             "metadata": {
                 "core": {}
             },
@@ -52,7 +52,7 @@
             "type": "scheme"
         },
         {
-            "id": "3650175e-cc0d-4430-9435-20cddbcdb081",
+            "id": "22e2acf1-b157-44e6-a5ba-c2bc4d3980de",
             "metadata": {
                 "core": {}
             },
@@ -61,7 +61,7 @@
             "type": "atom"
         },
         {
-            "id": "d36137da-f732-409e-be9e-2f67015336a0",
+            "id": "4927e52d-4649-4a9f-ae1e-0e23065d44d9",
             "metadata": {
                 "core": {}
             },
@@ -69,7 +69,7 @@
             "type": "scheme"
         },
         {
-            "id": "63558af6-e5be-405c-8f1d-e0d158635df4",
+            "id": "31b03cd9-71ac-4cab-85d0-445fcc3e7221",
             "metadata": {
                 "core": {}
             },

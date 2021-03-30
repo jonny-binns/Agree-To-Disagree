@@ -1,41 +1,31 @@
 {
     "edges": [
         {
-            "id": "17d1cc03-bdb1-443d-9076-bb30c309b862",
-            "source_id": "2004435d-24f9-46f5-8db7-c16b0ce4e3b8",
-            "target_id": "a3ba6205-9d0e-4203-8456-af0187d372e6"
+            "id": "f857b11d-a382-4e49-8763-805fdb7121d5",
+            "source_id": "1e9b2eec-6683-4e2c-b7e6-69adf34d2abe",
+            "target_id": "37915f31-8265-45e0-9f11-5ef879dc907f"
         },
         {
-            "id": "dfd54a80-ac0b-40f5-aad5-b91e5fc718ce",
-            "source_id": "960fabef-a6ac-414b-bbd3-9a8cb7d44e8b",
-            "target_id": "2004435d-24f9-46f5-8db7-c16b0ce4e3b8"
-        },
-        {
-            "id": "f51f3ad6-2ded-4811-8e58-762672b1d2df",
-            "source_id": "dcc864ec-64c9-47af-bc7d-80905a448e6f",
-            "target_id": "960fabef-a6ac-414b-bbd3-9a8cb7d44e8b"
-        },
-        {
-            "id": "6fe6a370-a3ab-4599-b327-d714883ddae1",
-            "source_id": "29af5f20-71db-4e53-a336-432ff286821b",
-            "target_id": "dcc864ec-64c9-47af-bc7d-80905a448e6f"
+            "id": "57d7efde-131a-45ef-bc96-81848f80ac61",
+            "source_id": "f73999b0-e68a-4117-acdd-d5790bcea015",
+            "target_id": "1e9b2eec-6683-4e2c-b7e6-69adf34d2abe"
         }
     ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
             "analyst_name": "A User",
-            "claim": "a3ba6205-9d0e-4203-8456-af0187d372e6",
-            "created": "2021-03-12T13:28:37",
-            "edited": "2021-03-12T13:28:37",
-            "id": "0c09a357-0907-4ff8-9d52-f565c87934ec",
+            "claim": "37915f31-8265-45e0-9f11-5ef879dc907f",
+            "created": "2021-03-30T18:00:53",
+            "edited": "2021-03-30T18:00:53",
+            "id": "b9e0f542-fd11-4f43-bec3-6abb9fc70c51",
             "title": "All Humans Should Be Vegan",
             "version": "0.5"
         }
     },
     "nodes": [
         {
-            "id": "a3ba6205-9d0e-4203-8456-af0187d372e6",
+            "id": "37915f31-8265-45e0-9f11-5ef879dc907f",
             "metadata": {
                 "core": {}
             },
@@ -44,7 +34,7 @@
             "type": "atom"
         },
         {
-            "id": "2004435d-24f9-46f5-8db7-c16b0ce4e3b8",
+            "id": "1e9b2eec-6683-4e2c-b7e6-69adf34d2abe",
             "metadata": {
                 "core": {}
             },
@@ -52,29 +42,12 @@
             "type": "scheme"
         },
         {
-            "id": "960fabef-a6ac-414b-bbd3-9a8cb7d44e8b",
+            "id": "f73999b0-e68a-4117-acdd-d5790bcea015",
             "metadata": {
                 "core": {}
             },
             "sources": [],
             "text": "A vegan society has environmental advantages",
-            "type": "atom"
-        },
-        {
-            "id": "dcc864ec-64c9-47af-bc7d-80905a448e6f",
-            "metadata": {
-                "core": {}
-            },
-            "name": "conflict",
-            "type": "scheme"
-        },
-        {
-            "id": "29af5f20-71db-4e53-a336-432ff286821b",
-            "metadata": {
-                "core": {}
-            },
-            "sources": [],
-            "text": "But beeeef",
             "type": "atom"
         }
     ],

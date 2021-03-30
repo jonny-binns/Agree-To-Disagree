@@ -1,51 +1,41 @@
 {
     "edges": [
         {
-            "id": "21f3de79-6200-4948-ad2c-3988ffe2a583",
-            "source_id": "b0d90de7-5ccf-4ce2-b755-b690d970b4fc",
-            "target_id": "59806218-c8e5-44eb-b02f-b193a0c4d585"
+            "id": "10e51bdb-292b-41e0-b5c2-2a7fbcca6b6c",
+            "source_id": "39737825-d525-4d43-b61e-aa4ac7f12403",
+            "target_id": "ef9a49d0-70e7-4c88-b83c-a752f9ba7c99"
         },
         {
-            "id": "50eea902-1487-4459-b9a6-5a67dc543a92",
-            "source_id": "081e17f9-8c9e-4d93-8ddb-1c3df6905e66",
-            "target_id": "b0d90de7-5ccf-4ce2-b755-b690d970b4fc"
+            "id": "09b0c272-5017-4eba-828b-3a29c3ec8237",
+            "source_id": "7d9d6d2e-fa00-4c1a-b0a1-beaca143a7ab",
+            "target_id": "39737825-d525-4d43-b61e-aa4ac7f12403"
         },
         {
-            "id": "14d650e2-5b4a-4b4e-9af1-90ed37025546",
-            "source_id": "cd93bde2-43ca-4621-b96f-90a321075df6",
-            "target_id": "59806218-c8e5-44eb-b02f-b193a0c4d585"
+            "id": "61e97ad5-8320-415c-a824-d3458acf88a6",
+            "source_id": "17753a2b-8595-406a-8b56-164b48ab6db8",
+            "target_id": "ef9a49d0-70e7-4c88-b83c-a752f9ba7c99"
         },
         {
-            "id": "c2af725e-87bf-4f2e-907b-cd8678368dc2",
-            "source_id": "d20e0d0c-b206-48a8-ac2b-1a68619faa6c",
-            "target_id": "cd93bde2-43ca-4621-b96f-90a321075df6"
-        },
-        {
-            "id": "f523e44a-1dc2-43ed-8072-df70e52e7a48",
-            "source_id": "7dafe64d-e524-4324-a699-7250063127d1",
-            "target_id": "59806218-c8e5-44eb-b02f-b193a0c4d585"
-        },
-        {
-            "id": "4069e94b-c896-4efd-aeee-5e157662c82a",
-            "source_id": "8305c456-6bf7-4119-9d90-b027baa1508b",
-            "target_id": "7dafe64d-e524-4324-a699-7250063127d1"
+            "id": "c61bee10-d952-408c-a0f8-c6e11d7c6ee4",
+            "source_id": "c88b3e5e-2890-47a1-a234-a23324770c9d",
+            "target_id": "17753a2b-8595-406a-8b56-164b48ab6db8"
         }
     ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
             "analyst_name": "A User",
-            "claim": "59806218-c8e5-44eb-b02f-b193a0c4d585",
-            "created": "2021-03-12T13:30:38",
-            "edited": "2021-03-12T13:30:38",
-            "id": "a8c18e31-8388-4576-adfe-d9e371143c69",
+            "claim": "ef9a49d0-70e7-4c88-b83c-a752f9ba7c99",
+            "created": "2021-03-30T18:01:50",
+            "edited": "2021-03-30T18:01:50",
+            "id": "a7fd2d8f-2618-4ac5-8c4a-7f2174bf9b68",
             "title": "We exist within a computer simulated reality",
             "version": "0.5"
         }
     },
     "nodes": [
         {
-            "id": "59806218-c8e5-44eb-b02f-b193a0c4d585",
+            "id": "ef9a49d0-70e7-4c88-b83c-a752f9ba7c99",
             "metadata": {
                 "core": {}
             },
@@ -54,7 +44,7 @@
             "type": "atom"
         },
         {
-            "id": "b0d90de7-5ccf-4ce2-b755-b690d970b4fc",
+            "id": "39737825-d525-4d43-b61e-aa4ac7f12403",
             "metadata": {
                 "core": {}
             },
@@ -62,7 +52,7 @@
             "type": "scheme"
         },
         {
-            "id": "081e17f9-8c9e-4d93-8ddb-1c3df6905e66",
+            "id": "7d9d6d2e-fa00-4c1a-b0a1-beaca143a7ab",
             "metadata": {
                 "core": {}
             },
@@ -71,7 +61,7 @@
             "type": "atom"
         },
         {
-            "id": "cd93bde2-43ca-4621-b96f-90a321075df6",
+            "id": "17753a2b-8595-406a-8b56-164b48ab6db8",
             "metadata": {
                 "core": {}
             },
@@ -79,29 +69,12 @@
             "type": "scheme"
         },
         {
-            "id": "d20e0d0c-b206-48a8-ac2b-1a68619faa6c",
+            "id": "c88b3e5e-2890-47a1-a234-a23324770c9d",
             "metadata": {
                 "core": {}
             },
             "sources": [],
             "text": "If it were possible to simulate, it would be highly probable that one existed",
-            "type": "atom"
-        },
-        {
-            "id": "7dafe64d-e524-4324-a699-7250063127d1",
-            "metadata": {
-                "core": {}
-            },
-            "name": "conflict",
-            "type": "scheme"
-        },
-        {
-            "id": "8305c456-6bf7-4119-9d90-b027baa1508b",
-            "metadata": {
-                "core": {}
-            },
-            "sources": [],
-            "text": "I don't agree",
             "type": "atom"
         }
     ],

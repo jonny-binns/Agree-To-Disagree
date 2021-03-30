@@ -1,51 +1,41 @@
 {
     "edges": [
         {
-            "id": "10670bd6-5226-4d02-9e65-ded9dcb1e401",
-            "source_id": "4b473ad0-26ac-4018-a411-97df53fb29e8",
-            "target_id": "8e539155-7447-4e60-aace-a4897565ee0c"
+            "id": "886edea4-8bfd-4c84-98d5-693e0a8b845b",
+            "source_id": "e23432d1-1414-48da-9aea-59c7c2c136f2",
+            "target_id": "11d77dcf-27e0-4ab9-b5c6-da61cabce717"
         },
         {
-            "id": "fe116ea4-a5d8-405f-8fcd-bab27cc9012c",
-            "source_id": "9095a196-014e-4617-a88a-f41e4bfc85a2",
-            "target_id": "4b473ad0-26ac-4018-a411-97df53fb29e8"
+            "id": "0a64d311-108c-473c-ae40-c5cf769e8162",
+            "source_id": "83a18e7a-7cd8-4173-967d-92f373310302",
+            "target_id": "e23432d1-1414-48da-9aea-59c7c2c136f2"
         },
         {
-            "id": "34467743-1a62-4197-b2ce-9af4292f2a33",
-            "source_id": "bbc65ac4-f39f-47b4-8e2f-17fcb3972a59",
-            "target_id": "8e539155-7447-4e60-aace-a4897565ee0c"
+            "id": "4acbaa6d-4442-4189-9245-d9a97737c276",
+            "source_id": "6ef67ea8-73d0-4ca3-ae2a-aa0f754a32fa",
+            "target_id": "11d77dcf-27e0-4ab9-b5c6-da61cabce717"
         },
         {
-            "id": "d3970338-5389-4008-a966-c75dc9e1c479",
-            "source_id": "4f641345-52ca-4e9a-bbd2-972e867b1271",
-            "target_id": "bbc65ac4-f39f-47b4-8e2f-17fcb3972a59"
-        },
-        {
-            "id": "909dc292-60b7-42a9-b2b7-d986eee5c8a2",
-            "source_id": "a3ac8b17-f3d3-4c9f-9d1a-f40db4fba198",
-            "target_id": "4f641345-52ca-4e9a-bbd2-972e867b1271"
-        },
-        {
-            "id": "5b6071d9-561a-4b96-9b34-051c88673c9f",
-            "source_id": "30027470-3281-4354-a3bb-38d77470bd38",
-            "target_id": "a3ac8b17-f3d3-4c9f-9d1a-f40db4fba198"
+            "id": "de529c7d-dd9d-4d62-8e57-fc27c4688665",
+            "source_id": "cbb90c07-5dcb-49a4-839b-695d2a3b599e",
+            "target_id": "6ef67ea8-73d0-4ca3-ae2a-aa0f754a32fa"
         }
     ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
             "analyst_name": "A User",
-            "claim": "8e539155-7447-4e60-aace-a4897565ee0c",
-            "created": "2021-03-12T13:31:54",
-            "edited": "2021-03-12T13:31:54",
-            "id": "00e7e03a-030b-4a45-a981-6338cc4b0d4e",
+            "claim": "11d77dcf-27e0-4ab9-b5c6-da61cabce717",
+            "created": "2021-03-30T18:00:40",
+            "edited": "2021-03-30T18:00:40",
+            "id": "7996bbdd-b009-4daa-950d-5753b7210ff8",
             "title": "Aliens are real",
             "version": "0.5"
         }
     },
     "nodes": [
         {
-            "id": "8e539155-7447-4e60-aace-a4897565ee0c",
+            "id": "11d77dcf-27e0-4ab9-b5c6-da61cabce717",
             "metadata": {
                 "core": {}
             },
@@ -54,7 +44,7 @@
             "type": "atom"
         },
         {
-            "id": "4b473ad0-26ac-4018-a411-97df53fb29e8",
+            "id": "e23432d1-1414-48da-9aea-59c7c2c136f2",
             "metadata": {
                 "core": {}
             },
@@ -62,16 +52,16 @@
             "type": "scheme"
         },
         {
-            "id": "9095a196-014e-4617-a88a-f41e4bfc85a2",
+            "id": "83a18e7a-7cd8-4173-967d-92f373310302",
             "metadata": {
                 "core": {}
             },
             "sources": [],
-            "text": "There is no clear evidence for the existance of alien life",
+            "text": "There is no clear evidence for the existence of alien life",
             "type": "atom"
         },
         {
-            "id": "bbc65ac4-f39f-47b4-8e2f-17fcb3972a59",
+            "id": "6ef67ea8-73d0-4ca3-ae2a-aa0f754a32fa",
             "metadata": {
                 "core": {}
             },
@@ -79,29 +69,12 @@
             "type": "scheme"
         },
         {
-            "id": "4f641345-52ca-4e9a-bbd2-972e867b1271",
+            "id": "cbb90c07-5dcb-49a4-839b-695d2a3b599e",
             "metadata": {
                 "core": {}
             },
             "sources": [],
             "text": "Due to the size and age of the universe, there exists an extremely high number of planets on which life could emerge and thrive",
-            "type": "atom"
-        },
-        {
-            "id": "a3ac8b17-f3d3-4c9f-9d1a-f40db4fba198",
-            "metadata": {
-                "core": {}
-            },
-            "name": "conflict",
-            "type": "scheme"
-        },
-        {
-            "id": "30027470-3281-4354-a3bb-38d77470bd38",
-            "metadata": {
-                "core": {}
-            },
-            "sources": [],
-            "text": "",
             "type": "atom"
         }
     ],

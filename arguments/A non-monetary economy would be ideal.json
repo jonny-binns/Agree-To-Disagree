@@ -1,31 +1,31 @@
 {
     "edges": [
         {
-            "id": "272086a4-ade4-4819-ba68-58046527a585",
-            "source_id": "5bc919b6-82ca-490f-85b2-cffa3b4806af",
-            "target_id": "46e6514f-59aa-4cf6-b20d-aa50635a9988"
+            "id": "e631694c-acfe-43ce-9f0f-3ba40f0f6edd",
+            "source_id": "5299cb95-e6fd-42b8-a210-45450cd55c90",
+            "target_id": "6bae1699-2bc5-4a77-8ac6-77866353c160"
         },
         {
-            "id": "69e71c7b-8d48-4a12-bc0a-5933bf4a9fac",
-            "source_id": "e1048cfd-4a66-408f-84da-098bb95c0c38",
-            "target_id": "5bc919b6-82ca-490f-85b2-cffa3b4806af"
+            "id": "16bc7304-da2e-49a4-98ce-8b295b4f5cc1",
+            "source_id": "cf11fc65-d6a7-4d3a-8f5d-a3061cacb295",
+            "target_id": "5299cb95-e6fd-42b8-a210-45450cd55c90"
         }
     ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
             "analyst_name": "A User",
-            "claim": "46e6514f-59aa-4cf6-b20d-aa50635a9988",
-            "created": "2021-03-12T13:33:06",
-            "edited": "2021-03-12T13:33:06",
-            "id": "7c541f0e-4572-4092-9312-49bd7825efea",
+            "claim": "6bae1699-2bc5-4a77-8ac6-77866353c160",
+            "created": "2021-03-30T18:00:19",
+            "edited": "2021-03-30T18:00:19",
+            "id": "4d5736ba-ce18-43cb-9847-ad60fb914693",
             "title": "A non-monetary economy would be ideal",
             "version": "0.5"
         }
     },
     "nodes": [
         {
-            "id": "46e6514f-59aa-4cf6-b20d-aa50635a9988",
+            "id": "6bae1699-2bc5-4a77-8ac6-77866353c160",
             "metadata": {
                 "core": {}
             },
@@ -34,7 +34,7 @@
             "type": "atom"
         },
         {
-            "id": "5bc919b6-82ca-490f-85b2-cffa3b4806af",
+            "id": "5299cb95-e6fd-42b8-a210-45450cd55c90",
             "metadata": {
                 "core": {}
             },
@@ -42,7 +42,7 @@
             "type": "scheme"
         },
         {
-            "id": "e1048cfd-4a66-408f-84da-098bb95c0c38",
+            "id": "cf11fc65-d6a7-4d3a-8f5d-a3061cacb295",
             "metadata": {
                 "core": {}
             },

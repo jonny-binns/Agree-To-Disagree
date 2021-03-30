@@ -1,61 +1,51 @@
 {
     "edges": [
         {
-            "id": "ea8cc906-2182-46f8-b3a9-6a86b7230274",
-            "source_id": "5692fb18-603d-4e22-8c08-876a55f46738",
-            "target_id": "716ef92a-78fc-4297-9d4a-0a5033512312"
+            "id": "77a2aeb5-705b-4e85-8b87-4a65d2b8e0af",
+            "source_id": "4c3c3bce-0bd7-403d-b2a6-ec10fbb4df93",
+            "target_id": "63a5e562-47f1-4b31-bf5e-f26b29f0b87f"
         },
         {
-            "id": "31dae947-97b0-4ad3-beba-8e2446921d71",
-            "source_id": "9239d0c2-e365-4c74-8f95-728d2f7f3e0f",
-            "target_id": "5692fb18-603d-4e22-8c08-876a55f46738"
+            "id": "76f5fc55-f71f-4b88-8a5e-defd062a70d3",
+            "source_id": "35a4613a-d4d3-442e-a1b6-809642fae869",
+            "target_id": "4c3c3bce-0bd7-403d-b2a6-ec10fbb4df93"
         },
         {
-            "id": "497dd664-ef26-45bf-a5b8-09744848024e",
-            "source_id": "c7744fc6-39bd-47ce-afc7-7ffd06428e2f",
-            "target_id": "716ef92a-78fc-4297-9d4a-0a5033512312"
+            "id": "d1af0781-7fc3-4106-bbf7-8b16b1e70c9f",
+            "source_id": "4262b880-a0d5-46df-9eb6-64ebbfcca10d",
+            "target_id": "63a5e562-47f1-4b31-bf5e-f26b29f0b87f"
         },
         {
-            "id": "249ab582-4ea4-43a0-bb5f-f42f2c3e5284",
-            "source_id": "0e5d8812-120e-40b0-942f-80924b3c6953",
-            "target_id": "c7744fc6-39bd-47ce-afc7-7ffd06428e2f"
+            "id": "c22de967-643a-47bb-96ac-b6113f67a47b",
+            "source_id": "96136927-afe3-49f5-861a-38ba1161055b",
+            "target_id": "4262b880-a0d5-46df-9eb6-64ebbfcca10d"
         },
         {
-            "id": "4e00c289-cc25-41eb-94d5-2044b0305eac",
-            "source_id": "ec39cb7b-465d-4777-b3a4-6bb7ee407585",
-            "target_id": "716ef92a-78fc-4297-9d4a-0a5033512312"
+            "id": "7ee37bb9-4aec-4c0f-b8dd-59080178eccf",
+            "source_id": "d4383021-5489-491d-82b6-5ef803b53b07",
+            "target_id": "63a5e562-47f1-4b31-bf5e-f26b29f0b87f"
         },
         {
-            "id": "9043b686-8dfb-4c1d-9487-cd9e80612117",
-            "source_id": "37a128d4-420c-4628-a1a3-6807e66877be",
-            "target_id": "ec39cb7b-465d-4777-b3a4-6bb7ee407585"
-        },
-        {
-            "id": "875ebd64-3198-4c05-ba33-ac4a60006729",
-            "source_id": "9eb55615-5a62-4b7b-a744-d8c39cf049de",
-            "target_id": "716ef92a-78fc-4297-9d4a-0a5033512312"
-        },
-        {
-            "id": "6c6a96e8-7e71-4caa-afa2-b2475009cdf3",
-            "source_id": "4a866073-ccfe-4ae8-bf08-b6e18f557852",
-            "target_id": "9eb55615-5a62-4b7b-a744-d8c39cf049de"
+            "id": "1d618c2d-a8ef-41e9-8226-bd09f01c0c5c",
+            "source_id": "4ea2edd6-f200-4f14-b7f0-0c8c8b59f2ef",
+            "target_id": "d4383021-5489-491d-82b6-5ef803b53b07"
         }
     ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
             "analyst_name": "A User",
-            "claim": "716ef92a-78fc-4297-9d4a-0a5033512312",
-            "created": "2021-03-12T13:33:48",
-            "edited": "2021-03-12T13:33:48",
-            "id": "1acf7f49-c91e-4eaf-ac81-ede8674908f4",
+            "claim": "63a5e562-47f1-4b31-bf5e-f26b29f0b87f",
+            "created": "2021-03-30T18:01:29",
+            "edited": "2021-03-30T18:01:29",
+            "id": "e018c8c4-32f0-4319-8a5e-0cf9358ae504",
             "title": "Pineapple does not belong on pizza",
             "version": "0.5"
         }
     },
     "nodes": [
         {
-            "id": "716ef92a-78fc-4297-9d4a-0a5033512312",
+            "id": "63a5e562-47f1-4b31-bf5e-f26b29f0b87f",
             "metadata": {
                 "core": {}
             },
@@ -64,15 +54,15 @@
             "type": "atom"
         },
         {
-            "id": "5692fb18-603d-4e22-8c08-876a55f46738",
+            "id": "4c3c3bce-0bd7-403d-b2a6-ec10fbb4df93",
             "metadata": {
                 "core": {}
             },
-            "name": "support",
+            "name": "conflict",
             "type": "scheme"
         },
         {
-            "id": "9239d0c2-e365-4c74-8f95-728d2f7f3e0f",
+            "id": "35a4613a-d4d3-442e-a1b6-809642fae869",
             "metadata": {
                 "core": {}
             },
@@ -81,15 +71,15 @@
             "type": "atom"
         },
         {
-            "id": "c7744fc6-39bd-47ce-afc7-7ffd06428e2f",
+            "id": "4262b880-a0d5-46df-9eb6-64ebbfcca10d",
             "metadata": {
                 "core": {}
             },
-            "name": "conflict",
+            "name": "support",
             "type": "scheme"
         },
         {
-            "id": "0e5d8812-120e-40b0-942f-80924b3c6953",
+            "id": "96136927-afe3-49f5-861a-38ba1161055b",
             "metadata": {
                 "core": {}
             },
@@ -98,7 +88,7 @@
             "type": "atom"
         },
         {
-            "id": "ec39cb7b-465d-4777-b3a4-6bb7ee407585",
+            "id": "d4383021-5489-491d-82b6-5ef803b53b07",
             "metadata": {
                 "core": {}
             },
@@ -106,29 +96,12 @@
             "type": "scheme"
         },
         {
-            "id": "37a128d4-420c-4628-a1a3-6807e66877be",
+            "id": "4ea2edd6-f200-4f14-b7f0-0c8c8b59f2ef",
             "metadata": {
                 "core": {}
             },
             "sources": [],
             "text": "Pizzas are not a fruit salad",
-            "type": "atom"
-        },
-        {
-            "id": "9eb55615-5a62-4b7b-a744-d8c39cf049de",
-            "metadata": {
-                "core": {}
-            },
-            "name": "support",
-            "type": "scheme"
-        },
-        {
-            "id": "4a866073-ccfe-4ae8-bf08-b6e18f557852",
-            "metadata": {
-                "core": {}
-            },
-            "sources": [],
-            "text": "Pizza is (still) not a fruit salad",
             "type": "atom"
         }
     ],
