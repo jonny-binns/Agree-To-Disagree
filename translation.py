@@ -4,7 +4,7 @@ import fileManager as fm
 import random
 #these methods translate from the json encoded strings that datastore.py deals with to the variables needed in server.py
 
-#gets the debates prompt
+#gets the debate prompt
 def getPrompt(sfStr):
     sfJSON = json.loads(sfStr)
     sf.set_doc(sfJSON)
@@ -12,8 +12,8 @@ def getPrompt(sfStr):
     prompt = sf.get_atom_text(claim)
     return prompt
 
+
 #get random argument
-#no arguments
 #returns array with title, pro argument, con argument
 def getArguments(sfStr):
     #set SF doc
@@ -27,7 +27,6 @@ def getArguments(sfStr):
     randInt = random.randint(0, len(atomlist)-1)
     randArgID = atomlist[randInt]["id"]
     currentArgument = atomlist[randInt]["text"]
-
     #get children/connections of that argument
     connections = sf.get_connections(randArgID)
 
@@ -46,7 +45,6 @@ def getArguments(sfStr):
         for i in range(0, len(childConnection)):
             if(edge["target_id"] == childConnection[i]):
                 childrenEdgeID.append(edge["id"])
-
 
     #for each edge in childrenEdgeID, source_id = atom with arg text, target_id = weather arg is support or conflict
     arguments = []
@@ -77,6 +75,8 @@ def getArguments(sfStr):
     return arguments
 
 
+#param = string of a SADFace document
+#return array of arguments
 def getData(sfStr):
     #set SF doc
     sfJSON = json.loads(sfStr)
@@ -144,24 +144,23 @@ def getData(sfStr):
         data[i][1] = text
         data[i][2] = stance 
 
-
     return data    
 
+
 #add argument
-#argument = array with title, parent argument, pro/con, text
-#returns status
+#param = array with title, parent argument, pro/con, text
+#returns none
 def addArgument(argArr):
     #split argument array into parts
     prompt = argArr[0]
     newArgument = argArr[1]
     parent = argArr[2]
     stance = argArr[3]
-    print(argArr)
+
     #get sf doc
     sfStr = fm.getFile(prompt+".json")
     sfJSON = json.loads(sfStr)
     sf.set_doc(sfJSON)
-    #sf.prettyprint()
 
     #deal with parent argument being the debate prompt
     if(parent == "newReply"):
@@ -176,8 +175,8 @@ def addArgument(argArr):
     #write updated sfDoc to file
     sfJSONex = sf.export_json()
     fm.createFile(sfJSONex)
-
     return None
+
 
 #add prompt
 #argument = prompt

@@ -16,8 +16,8 @@ def getRandomFile():
     f = open("arguments/"+fileList[randno], "r")
     fStr = f.read()
     f.close()
-
     return fStr
+
 
 #gets a specific file based on its title
 def getFile(title):

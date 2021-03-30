@@ -6,7 +6,7 @@ import json
 
 app = Flask(__name__)
 
-#route for the manu/home page
+#route for the menu/home page
 @app.route('/', methods=['GET'])
 def menu():
     return render_template('Menu.html')
@@ -29,43 +29,22 @@ def answers_mode(answer=None, prompt=None, proArgument=None, conArgument=None):
 
         #add newArgument to db
         argArr = [prompt, newArgument, parent, stance]
-        #print("server. 30. argArr" + str(argArr))
         t.addArgument(argArr)
 
         return redirect(url_for('answers_mode'))
     else:
-        #set variables to correct values
-        #prompt = "this is an example prompt"
-        #proArgument = "this is an example argument in support of the prompt"
-        #conArgument = "this is an example argument in opposition of the prompt"
-        
-        #read from random file
+        #get random debate from file
         sfStr = fm.getRandomFile()
-
-
-        #get prompt then two random, yet paired arguments
-        #prompt = t.getPrompt(sfStr)
         
-        #arguments = t.getArguments(sfStr)
-
-        #currentArgument = arguments[0]
-        #proArgument = arguments[1]
-        #conArgument = arguments[2]
-
-        #display arguments/render template
-        #return render_template('ArgumentMode.html', prompt=prompt, currentArgument=currentArgument, proArgument=proArgument, conArgument=conArgument
-        
-        #get all data from file then serialise
+        #get all data from debate
         argData = t.getData(sfStr)
 
+        #serialize to string, using # as the delimiter
         argDataStr = ""
-
         for i in range(len(argData)):
             for j in range(0,3):
                 argDataStr = argDataStr + argData[i][j] + "#"
 
-
-        #print(argDataStr)
         return render_template('ArgumentMode.html', argDataStr=argDataStr)
     
 
@@ -85,16 +64,13 @@ def questions_mode():
 
 
 #route for voting mode
+#is not implemented, data is set in order for the ui to be developed
 @app.route('/vote/', methods=['POST', 'GET'])
 def voting_mode():
     if request.method == 'POST':
         #add prompt to db
         print("you did a post request")
     else:
-        #arguments = t.getArguments()
-        #prompt = arguments[0]
-        #proArgument = arguments[1]
-        #conArgument = arguments[2]
         prompt = "this is an example prompt"
         proArgument = "this is an example argument in support of the prompt"
         conArgument = "this is an example argument in opposition of the prompt"

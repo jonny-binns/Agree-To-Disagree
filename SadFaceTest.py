@@ -4,11 +4,25 @@ import fileManager as fm
 import translation as t
 
 
-sfStr = fm.getRandomFile()
-argData = t.getData(sfStr)
-print(str(argData))
+sfStr = fm.getFile("test prompt.json")
+data = t.getData(sfStr)
+print(data)
+
 
 '''
+def createArgArr():
+    #will add arguments to the file created in test_addPrompt()
+    prompt = "test prompt"
+    newArgument = "test argument"
+    parent = "test prompt"
+    stance = "agree"
+    argArr = [prompt, newArgument, parent, stance]
+    return argArr
+
+argArr = createArgArr()
+prompt = argArr[0]
+t.addPrompt(prompt)
+
 fm.deleteFile("test argument")
 
 
