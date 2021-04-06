@@ -19,6 +19,16 @@
             "id": "f7e7eb41-e7cb-40e7-8129-73e9b32ab109",
             "source_id": "5f7612a8-f472-4fde-b976-1b03f6afb44d",
             "target_id": "12e36bdf-59e3-4e02-a49a-0618a8e1ec38"
+        },
+        {
+            "id": "4d5291d7-1b51-4db5-9e80-f04f1a08ed6f",
+            "source_id": "b7df047d-afab-47cc-adf0-8251bfca7fcc",
+            "target_id": "4feab9a3-f75b-40f5-b88d-1ddf54696035"
+        },
+        {
+            "id": "e1362f37-619f-407f-8e8d-f40c35980f88",
+            "source_id": "e7b3ffc7-7829-4bd4-8828-eb3a07abd2c2",
+            "target_id": "b7df047d-afab-47cc-adf0-8251bfca7fcc"
         }
     ],
     "metadata": {
@@ -75,6 +85,23 @@
             },
             "sources": [],
             "text": "The benefits that zoos provide can be gained through more ethical methods",
+            "type": "atom"
+        },
+        {
+            "id": "b7df047d-afab-47cc-adf0-8251bfca7fcc",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "e7b3ffc7-7829-4bd4-8828-eb3a07abd2c2",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "In their current format yes (really they should be sanctuarys and not brought there on purpose just for viewing.",
             "type": "atom"
         }
     ],

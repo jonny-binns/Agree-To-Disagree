@@ -9,6 +9,16 @@
             "id": "57d7efde-131a-45ef-bc96-81848f80ac61",
             "source_id": "f73999b0-e68a-4117-acdd-d5790bcea015",
             "target_id": "1e9b2eec-6683-4e2c-b7e6-69adf34d2abe"
+        },
+        {
+            "id": "e8c30bfd-1e6c-4f59-8e33-50a421b41374",
+            "source_id": "49b4ddd6-037d-42e9-ae4c-ce23037a06e6",
+            "target_id": "f73999b0-e68a-4117-acdd-d5790bcea015"
+        },
+        {
+            "id": "8cd45c35-f942-4ae3-8c0a-f72eaede6cf1",
+            "source_id": "8bbfa4cc-99c1-4f4c-8728-85cc207abcaa",
+            "target_id": "49b4ddd6-037d-42e9-ae4c-ce23037a06e6"
         }
     ],
     "metadata": {
@@ -48,6 +58,23 @@
             },
             "sources": [],
             "text": "A vegan society has environmental advantages",
+            "type": "atom"
+        },
+        {
+            "id": "49b4ddd6-037d-42e9-ae4c-ce23037a06e6",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "8bbfa4cc-99c1-4f4c-8728-85cc207abcaa",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "But what about milk production of cows? whos gonna drink the milk? don't want animals to go extinct there needs to be a better balance",
             "type": "atom"
         }
     ],

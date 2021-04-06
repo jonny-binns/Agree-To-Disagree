@@ -1,0 +1,27 @@
+{
+    "edges": [],
+    "metadata": {
+        "core": {
+            "analyst_email": "user@email.address",
+            "analyst_name": "A User",
+            "claim": "bab89ba9-a06e-454d-9a1b-cf129cb068c4",
+            "created": "2021-04-02T15:19:41",
+            "edited": "2021-04-02T15:19:41",
+            "id": "bfdd050c-a306-46d5-8526-46b8247c7e75",
+            "title": "Should fracking be allowed?",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "bab89ba9-a06e-454d-9a1b-cf129cb068c4",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Should fracking be allowed?",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}

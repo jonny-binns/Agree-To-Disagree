@@ -1,5 +1,16 @@
 {
-    "edges": [],
+    "edges": [
+        {
+            "id": "13c5dd21-9014-4d35-9ccc-52fd666d9fa6",
+            "source_id": "c8c8ccf2-8ff5-447c-b80f-c7c2dbdb33c8",
+            "target_id": "b7567b33-e4a4-4a79-bbd9-3ef4685809a3"
+        },
+        {
+            "id": "155aca80-ef21-4019-ac55-650f8a878b29",
+            "source_id": "596f4fff-9499-4b85-b81d-8181dd157960",
+            "target_id": "c8c8ccf2-8ff5-447c-b80f-c7c2dbdb33c8"
+        }
+    ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
@@ -20,6 +31,23 @@
             },
             "sources": [],
             "text": "Documentaries aren't films",
+            "type": "atom"
+        },
+        {
+            "id": "c8c8ccf2-8ff5-447c-b80f-c7c2dbdb33c8",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "596f4fff-9499-4b85-b81d-8181dd157960",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "how are they filmed. suppose you could use documented but that has a broader spectrum rather than a film cause a documentary is essentially recorded on film (dont know if they still are)",
             "type": "atom"
         }
     ],

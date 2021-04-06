@@ -29,6 +29,16 @@
             "id": "1d618c2d-a8ef-41e9-8226-bd09f01c0c5c",
             "source_id": "4ea2edd6-f200-4f14-b7f0-0c8c8b59f2ef",
             "target_id": "d4383021-5489-491d-82b6-5ef803b53b07"
+        },
+        {
+            "id": "74471ecb-50e7-408b-bf26-c5017153539c",
+            "source_id": "6cab2d22-0fcf-492f-b740-c641b7d26922",
+            "target_id": "63a5e562-47f1-4b31-bf5e-f26b29f0b87f"
+        },
+        {
+            "id": "54af0c10-15cc-4e70-ae2c-b646f12ee63c",
+            "source_id": "3d464058-c9a6-46d0-9720-efb855d66360",
+            "target_id": "6cab2d22-0fcf-492f-b740-c641b7d26922"
         }
     ],
     "metadata": {
@@ -102,6 +112,23 @@
             },
             "sources": [],
             "text": "Pizzas are not a fruit salad",
+            "type": "atom"
+        },
+        {
+            "id": "6cab2d22-0fcf-492f-b740-c641b7d26922",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "3d464058-c9a6-46d0-9720-efb855d66360",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "lies",
             "type": "atom"
         }
     ],

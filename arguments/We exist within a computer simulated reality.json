@@ -19,6 +19,16 @@
             "id": "c61bee10-d952-408c-a0f8-c6e11d7c6ee4",
             "source_id": "c88b3e5e-2890-47a1-a234-a23324770c9d",
             "target_id": "17753a2b-8595-406a-8b56-164b48ab6db8"
+        },
+        {
+            "id": "0d27cbf3-94e8-4a69-8ec2-b9a645148833",
+            "source_id": "b908df21-fcd2-4089-af79-64442c4230ee",
+            "target_id": "ef9a49d0-70e7-4c88-b83c-a752f9ba7c99"
+        },
+        {
+            "id": "c7799cb4-3ce1-4a1b-8953-811534ad8e05",
+            "source_id": "7708a7f5-9310-40b5-86ff-9cdff1c7ec8e",
+            "target_id": "b908df21-fcd2-4089-af79-64442c4230ee"
         }
     ],
     "metadata": {
@@ -75,6 +85,23 @@
             },
             "sources": [],
             "text": "If it were possible to simulate, it would be highly probable that one existed",
+            "type": "atom"
+        },
+        {
+            "id": "b908df21-fcd2-4089-af79-64442c4230ee",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "7708a7f5-9310-40b5-86ff-9cdff1c7ec8e",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "who knows, rick and morty made a universe to power a space ship so whose to say god didn't do the same",
             "type": "atom"
         }
     ],

@@ -1,0 +1,27 @@
+{
+    "edges": [],
+    "metadata": {
+        "core": {
+            "analyst_email": "user@email.address",
+            "analyst_name": "A User",
+            "claim": "c9bb71cf-0aa7-4a77-ad06-3a559aed6fe7",
+            "created": "2021-03-31T19:43:09",
+            "edited": "2021-03-31T19:43:09",
+            "id": "9430faf3-e13f-4801-9a40-ac89051a0150",
+            "title": "Is Susan Boyle still relevant?",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "c9bb71cf-0aa7-4a77-ad06-3a559aed6fe7",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Is Susan Boyle still relevant?",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}

@@ -9,6 +9,16 @@
             "id": "16bc7304-da2e-49a4-98ce-8b295b4f5cc1",
             "source_id": "cf11fc65-d6a7-4d3a-8f5d-a3061cacb295",
             "target_id": "5299cb95-e6fd-42b8-a210-45450cd55c90"
+        },
+        {
+            "id": "caff5c7d-ffc1-4527-abff-f08788ad80e5",
+            "source_id": "99e3a7d4-4193-420b-b65b-33c747e50535",
+            "target_id": "6bae1699-2bc5-4a77-8ac6-77866353c160"
+        },
+        {
+            "id": "8134448e-e3e4-4303-8afa-3fc598cc22f3",
+            "source_id": "cba53131-93c3-4e59-8f5d-56a7fe220a79",
+            "target_id": "99e3a7d4-4193-420b-b65b-33c747e50535"
         }
     ],
     "metadata": {
@@ -48,6 +58,23 @@
             },
             "sources": [],
             "text": "The trend towards automation will make many jobs obselete. A non-monetary economy is the best system to deal with the resulting unemployment",
+            "type": "atom"
+        },
+        {
+            "id": "99e3a7d4-4193-420b-b65b-33c747e50535",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "cba53131-93c3-4e59-8f5d-56a7fe220a79",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "I feel there is always someone who takes advantage of the system",
             "type": "atom"
         }
     ],
