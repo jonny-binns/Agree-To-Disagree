@@ -19,6 +19,16 @@
             "id": "8cd45c35-f942-4ae3-8c0a-f72eaede6cf1",
             "source_id": "8bbfa4cc-99c1-4f4c-8728-85cc207abcaa",
             "target_id": "49b4ddd6-037d-42e9-ae4c-ce23037a06e6"
+        },
+        {
+            "id": "533dedbd-3a4e-4a0c-a596-89f053079278",
+            "source_id": "53f8b3e0-20d9-4b87-876b-417b856a2284",
+            "target_id": "37915f31-8265-45e0-9f11-5ef879dc907f"
+        },
+        {
+            "id": "affa592e-4928-43ea-9f03-494a72ecae97",
+            "source_id": "a5119e78-d86f-425d-9ce9-7b348d8f9e94",
+            "target_id": "53f8b3e0-20d9-4b87-876b-417b856a2284"
         }
     ],
     "metadata": {
@@ -75,6 +85,23 @@
             },
             "sources": [],
             "text": "But what about milk production of cows? whos gonna drink the milk? don't want animals to go extinct there needs to be a better balance",
+            "type": "atom"
+        },
+        {
+            "id": "53f8b3e0-20d9-4b87-876b-417b856a2284",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "a5119e78-d86f-425d-9ce9-7b348d8f9e94",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "I like burgers",
             "type": "atom"
         }
     ],

@@ -29,6 +29,16 @@
             "id": "e1362f37-619f-407f-8e8d-f40c35980f88",
             "source_id": "e7b3ffc7-7829-4bd4-8828-eb3a07abd2c2",
             "target_id": "b7df047d-afab-47cc-adf0-8251bfca7fcc"
+        },
+        {
+            "id": "b4e9fc67-a783-4691-873b-e70478d3e57f",
+            "source_id": "2f94c024-d9c5-4b21-a2a5-b62b723b3d5d",
+            "target_id": "4feab9a3-f75b-40f5-b88d-1ddf54696035"
+        },
+        {
+            "id": "8fdf9ef2-7d47-4f2b-8d1a-6af7f5759592",
+            "source_id": "f4963c79-3dd1-4ff2-a800-6b3696690be0",
+            "target_id": "2f94c024-d9c5-4b21-a2a5-b62b723b3d5d"
         }
     ],
     "metadata": {
@@ -102,6 +112,23 @@
             },
             "sources": [],
             "text": "In their current format yes (really they should be sanctuarys and not brought there on purpose just for viewing.",
+            "type": "atom"
+        },
+        {
+            "id": "2f94c024-d9c5-4b21-a2a5-b62b723b3d5d",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "f4963c79-3dd1-4ff2-a800-6b3696690be0",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "They should be better for the animals and not for the viewers",
             "type": "atom"
         }
     ],

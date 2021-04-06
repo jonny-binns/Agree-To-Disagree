@@ -1,5 +1,16 @@
 {
-    "edges": [],
+    "edges": [
+        {
+            "id": "c490b93b-3c9b-4052-80fa-395b940f6c7a",
+            "source_id": "02ab7964-f5bc-4f0b-b5fd-da92f0bb35bd",
+            "target_id": "bab89ba9-a06e-454d-9a1b-cf129cb068c4"
+        },
+        {
+            "id": "a268a6f1-e557-4fe9-9124-5a40e92178da",
+            "source_id": "d1e7829f-b62b-4f82-b0bc-7cfa368d7b0a",
+            "target_id": "02ab7964-f5bc-4f0b-b5fd-da92f0bb35bd"
+        }
+    ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
@@ -20,6 +31,23 @@
             },
             "sources": [],
             "text": "Should fracking be allowed?",
+            "type": "atom"
+        },
+        {
+            "id": "02ab7964-f5bc-4f0b-b5fd-da92f0bb35bd",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "d1e7829f-b62b-4f82-b0bc-7cfa368d7b0a",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Probs no",
             "type": "atom"
         }
     ],
