@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, send_file
 import translation as t
 import fileManager as fm
 import sadface as sf
@@ -81,6 +81,14 @@ def voting_mode():
 @app.route('/about/', methods=['GET'])
 def about():
     return render_template('About.html')
+
+
+#route for downloading the dataset
+@app.route('/download/')
+def download_file():
+    #zip directory
+    return send_file(path, as_attachment=True)
+    #delete .zip after returning
 
     
 if __name__ == "__main__":
