@@ -1,0 +1,27 @@
+{
+    "edges": [],
+    "metadata": {
+        "core": {
+            "analyst_email": "user@email.address",
+            "analyst_name": "A User",
+            "claim": "d3af38ff-a1ba-40d6-8cb8-3fff112b0914",
+            "created": "2021-04-08T11:02:52",
+            "edited": "2021-04-08T11:02:52",
+            "id": "dfec9bfa-75f2-4e4b-bbe6-6873c673a5a2",
+            "title": "Knitting is more supreme than crocheting",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "d3af38ff-a1ba-40d6-8cb8-3fff112b0914",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Knitting is more supreme than crocheting",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}

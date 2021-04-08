@@ -39,6 +39,16 @@
             "id": "d46b02a6-492c-41bb-8383-96e54567cd15",
             "source_id": "998962c9-56ad-4261-b08b-e1ed26a6d792",
             "target_id": "9a04992f-97b5-4c19-a8be-ca6a52177814"
+        },
+        {
+            "id": "a13aa8ef-b2fa-46c1-ae5f-4a8b7b40e8fd",
+            "source_id": "35f9c951-5389-4b37-bbce-34c22c814334",
+            "target_id": "ef9a49d0-70e7-4c88-b83c-a752f9ba7c99"
+        },
+        {
+            "id": "1599cd2d-fbbb-4f92-9a96-669d15039be6",
+            "source_id": "4de5b521-1cfa-4066-97a9-0ecfecb0e520",
+            "target_id": "35f9c951-5389-4b37-bbce-34c22c814334"
         }
     ],
     "metadata": {
@@ -129,6 +139,23 @@
             },
             "sources": [],
             "text": "Someone has programmed me badly",
+            "type": "atom"
+        },
+        {
+            "id": "35f9c951-5389-4b37-bbce-34c22c814334",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "4de5b521-1cfa-4066-97a9-0ecfecb0e520",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "I feel like if we were we would have had updates wiping out the obvious glitches - racism, homophobia",
             "type": "atom"
         }
     ],

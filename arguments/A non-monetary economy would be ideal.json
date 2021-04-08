@@ -29,6 +29,16 @@
             "id": "337a6955-e1c4-4d44-b7b9-a1c5b97324ba",
             "source_id": "e9436047-b916-414f-81c3-33d17cb4c784",
             "target_id": "4f7e3905-a295-4c0e-b13f-c53a6f6611e9"
+        },
+        {
+            "id": "afd70b3b-c2b3-424f-9c04-d97a2db3e8f3",
+            "source_id": "04fc7705-e19d-4e6e-834d-5969ee7ad751",
+            "target_id": "6bae1699-2bc5-4a77-8ac6-77866353c160"
+        },
+        {
+            "id": "1299c555-d0e1-436e-848c-67fbdeaf9be6",
+            "source_id": "e1e4c367-56c3-437c-b6c7-a98ea608af87",
+            "target_id": "04fc7705-e19d-4e6e-834d-5969ee7ad751"
         }
     ],
     "metadata": {
@@ -102,6 +112,23 @@
             },
             "sources": [],
             "text": "MON MARX",
+            "type": "atom"
+        },
+        {
+            "id": "04fc7705-e19d-4e6e-834d-5969ee7ad751",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "e1e4c367-56c3-437c-b6c7-a98ea608af87",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "No, that would be too complicated. Who decides how much something is worth ",
             "type": "atom"
         }
     ],

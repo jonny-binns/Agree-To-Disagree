@@ -39,6 +39,16 @@
             "id": "8fdf9ef2-7d47-4f2b-8d1a-6af7f5759592",
             "source_id": "f4963c79-3dd1-4ff2-a800-6b3696690be0",
             "target_id": "2f94c024-d9c5-4b21-a2a5-b62b723b3d5d"
+        },
+        {
+            "id": "d1fef75c-2ccb-4564-9b0e-ad6b81651d9e",
+            "source_id": "5f6579ac-d858-41db-bbe9-213f7ff97d15",
+            "target_id": "4feab9a3-f75b-40f5-b88d-1ddf54696035"
+        },
+        {
+            "id": "93262e12-53d2-486d-9ee3-25a77be40132",
+            "source_id": "7a1ac9c4-9802-4db7-a3b2-14e581835646",
+            "target_id": "5f6579ac-d858-41db-bbe9-213f7ff97d15"
         }
     ],
     "metadata": {
@@ -129,6 +139,23 @@
             },
             "sources": [],
             "text": "They should be better for the animals and not for the viewers",
+            "type": "atom"
+        },
+        {
+            "id": "5f6579ac-d858-41db-bbe9-213f7ff97d15",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "7a1ac9c4-9802-4db7-a3b2-14e581835646",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Those that do work for conservation and species management should be ok as long as conditions are good",
             "type": "atom"
         }
     ],
