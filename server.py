@@ -82,14 +82,14 @@ def voting_mode():
 def about():
     return render_template('About.html')
 
-
+'''
 #route for downloading the dataset
 @app.route('/download/')
 def download_file():
     #zip directory
     return send_file(path, as_attachment=True)
     #delete .zip after returning
-
+'''
     
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
