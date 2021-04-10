@@ -1,0 +1,109 @@
+{
+    "edges": [
+        {
+            "id": "cf28e446-7c0f-4150-a86a-d6853cc2926f",
+            "source_id": "f3d75d56-59ba-45be-951e-370627a4c4f2",
+            "target_id": "20834198-444a-419c-8c92-081438b8ad52"
+        },
+        {
+            "id": "2fa46017-7db6-4551-9b4d-71800a86beaa",
+            "source_id": "a4eab47f-addf-49a0-b070-798753cd8c79",
+            "target_id": "f3d75d56-59ba-45be-951e-370627a4c4f2"
+        },
+        {
+            "id": "c712fdf9-68ca-4e2a-a4a9-3b8fe2d1f25b",
+            "source_id": "76138dfa-eb57-45fd-9037-2513f2af59c0",
+            "target_id": "a4eab47f-addf-49a0-b070-798753cd8c79"
+        },
+        {
+            "id": "a97001f0-79e4-4572-bb63-8ba3cf5ecfcd",
+            "source_id": "3eb860a9-5e04-4ee6-af6c-24301f8df109",
+            "target_id": "76138dfa-eb57-45fd-9037-2513f2af59c0"
+        },
+        {
+            "id": "601e1e39-93e1-49e5-a58a-6f9d9bece521",
+            "source_id": "64eb123e-4d96-45f5-ac67-82197dd8d893",
+            "target_id": "3eb860a9-5e04-4ee6-af6c-24301f8df109"
+        },
+        {
+            "id": "9104b1f9-78a9-4048-9003-8fc24234eb18",
+            "source_id": "b6f595f1-c6f8-4971-8a43-dead115b4a76",
+            "target_id": "64eb123e-4d96-45f5-ac67-82197dd8d893"
+        }
+    ],
+    "metadata": {
+        "core": {
+            "analyst_email": "user@email.address",
+            "analyst_name": "A User",
+            "claim": "20834198-444a-419c-8c92-081438b8ad52",
+            "created": "2021-04-10T19:44:27",
+            "edited": "2021-04-10T19:44:27",
+            "id": "acf0c97b-0074-41fa-b0c7-910d13d7fc1c",
+            "title": "Is this a debate prompt?",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "20834198-444a-419c-8c92-081438b8ad52",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Is this a debate prompt?",
+            "type": "atom"
+        },
+        {
+            "id": "f3d75d56-59ba-45be-951e-370627a4c4f2",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "a4eab47f-addf-49a0-b070-798753cd8c79",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Hmm, I don't know. Is it?",
+            "type": "atom"
+        },
+        {
+            "id": "76138dfa-eb57-45fd-9037-2513f2af59c0",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "3eb860a9-5e04-4ee6-af6c-24301f8df109",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "I'm not sure...",
+            "type": "atom"
+        },
+        {
+            "id": "64eb123e-4d96-45f5-ac67-82197dd8d893",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "b6f595f1-c6f8-4971-8a43-dead115b4a76",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "Yes. You are not sure.",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}

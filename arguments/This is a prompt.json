@@ -1,0 +1,27 @@
+{
+    "edges": [],
+    "metadata": {
+        "core": {
+            "analyst_email": "user@email.address",
+            "analyst_name": "A User",
+            "claim": "4accf0c1-6670-4988-ad23-b17296d57924",
+            "created": "2021-04-10T19:52:39",
+            "edited": "2021-04-10T19:52:39",
+            "id": "b64019b4-bd47-4e69-b438-22ef0f0cca18",
+            "title": "This is a prompt",
+            "version": "0.5"
+        }
+    },
+    "nodes": [
+        {
+            "id": "4accf0c1-6670-4988-ad23-b17296d57924",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "This is a prompt",
+            "type": "atom"
+        }
+    ],
+    "resources": []
+}

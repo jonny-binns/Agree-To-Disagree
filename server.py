@@ -44,7 +44,7 @@ def answers_mode(answer=None, prompt=None, proArgument=None, conArgument=None):
         for i in range(len(argData)):
             for j in range(0,3):
                 argDataStr = argDataStr + argData[i][j] + "#"
-
+        print(argDataStr)
         return render_template('ArgumentMode.html', argDataStr=argDataStr)
     
 

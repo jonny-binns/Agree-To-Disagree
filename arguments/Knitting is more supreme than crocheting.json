@@ -1,5 +1,16 @@
 {
-    "edges": [],
+    "edges": [
+        {
+            "id": "f89a4523-ff04-42c9-bd88-d16e4cf33036",
+            "source_id": "18168fa1-ad04-47ae-924f-f49cd294e93b",
+            "target_id": "d3af38ff-a1ba-40d6-8cb8-3fff112b0914"
+        },
+        {
+            "id": "1096847d-c58e-4560-93f4-4fb6de249903",
+            "source_id": "658b8780-4742-4ddf-94fd-d95035087656",
+            "target_id": "18168fa1-ad04-47ae-924f-f49cd294e93b"
+        }
+    ],
     "metadata": {
         "core": {
             "analyst_email": "user@email.address",
@@ -20,6 +31,23 @@
             },
             "sources": [],
             "text": "Knitting is more supreme than crocheting",
+            "type": "atom"
+        },
+        {
+            "id": "18168fa1-ad04-47ae-924f-f49cd294e93b",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "658b8780-4742-4ddf-94fd-d95035087656",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "But crochet gets you 'hooked'",
             "type": "atom"
         }
     ],

@@ -29,6 +29,16 @@
             "id": "491c2f78-f70a-4e93-b19a-936949b256c9",
             "source_id": "d3ffe5ce-47b3-482c-9960-bf557719d617",
             "target_id": "f50c2617-bd0e-4f0f-8125-28766cde6b99"
+        },
+        {
+            "id": "6fdc27f7-c733-4c8d-b738-3da42a826fc0",
+            "source_id": "dd7a3af1-5a71-44d0-adea-eb939dbdea52",
+            "target_id": "b7567b33-e4a4-4a79-bbd9-3ef4685809a3"
+        },
+        {
+            "id": "e3c9b145-fd7e-420b-9029-e66c75fcddab",
+            "source_id": "44c74328-8e05-4dd0-b89f-3039919da0a7",
+            "target_id": "dd7a3af1-5a71-44d0-adea-eb939dbdea52"
         }
     ],
     "metadata": {
@@ -102,6 +112,23 @@
             },
             "sources": [],
             "text": "Very dependent on the documentary though",
+            "type": "atom"
+        },
+        {
+            "id": "dd7a3af1-5a71-44d0-adea-eb939dbdea52",
+            "metadata": {
+                "core": {}
+            },
+            "name": "support",
+            "type": "scheme"
+        },
+        {
+            "id": "44c74328-8e05-4dd0-b89f-3039919da0a7",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "This is a wise, true; very good \"statement\"",
             "type": "atom"
         }
     ],

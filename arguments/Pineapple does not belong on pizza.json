@@ -69,6 +69,16 @@
             "id": "97d4b54a-c124-462b-8e33-bb7b8f8349b3",
             "source_id": "42e9e0d0-9677-4b47-b8f6-b22a9252b75b",
             "target_id": "26da75a1-7360-49e1-9350-8f3e29c2e9f7"
+        },
+        {
+            "id": "0f4a1c53-db81-4e8e-bb3d-c5a91b420688",
+            "source_id": "cab28faf-8593-405e-b2e0-b210382eb806",
+            "target_id": "63a5e562-47f1-4b31-bf5e-f26b29f0b87f"
+        },
+        {
+            "id": "3a4cb7b9-daf3-4c7b-88b5-a13f9fdc3e84",
+            "source_id": "d2175e12-f76b-4c78-b0b5-1340efb466f0",
+            "target_id": "cab28faf-8593-405e-b2e0-b210382eb806"
         }
     ],
     "metadata": {
@@ -210,6 +220,23 @@
             },
             "sources": [],
             "text": "Fruit and veg should not belong where it isn't supposed to - carrot cake is a no no too",
+            "type": "atom"
+        },
+        {
+            "id": "cab28faf-8593-405e-b2e0-b210382eb806",
+            "metadata": {
+                "core": {}
+            },
+            "name": "conflict",
+            "type": "scheme"
+        },
+        {
+            "id": "d2175e12-f76b-4c78-b0b5-1340efb466f0",
+            "metadata": {
+                "core": {}
+            },
+            "sources": [],
+            "text": "But some people like it",
             "type": "atom"
         }
     ],
