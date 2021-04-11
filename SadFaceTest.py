@@ -2,11 +2,18 @@ import json
 import sadface as sf
 import fileManager as fm
 import translation as t
+from zipfile import ZipFile
+import os
+from os.path import basename
 
+zipObj = ZipFile('arguments.zip', 'w')
+#get list of file names
+fileList = os.listdir("arguments")
+#loop through list and add all to .zip
+for file in fileList:
+    zipObj.write("arguments/"+file)
 
-sfStr = fm.getFile("test prompt.json")
-data = t.getData(sfStr)
-print(data)
+zipObj.close()
 
 
 '''

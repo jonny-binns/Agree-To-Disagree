@@ -3,6 +3,9 @@ import translation as t
 import fileManager as fm
 import sadface as sf
 import json
+from zipfile import ZipFile
+import os
+from os.path import basename
 
 app = Flask(__name__)
 
@@ -82,14 +85,23 @@ def voting_mode():
 def about():
     return render_template('About.html')
 
-'''
 #route for downloading the dataset
 @app.route('/download/')
 def download_file():
     #zip directory
+    zipObj = ZipFile('arguments.zip', 'w')
+    #get list of file names
+    fileList = os.listdir("arguments")
+    #loop through list and add all to .zip
+    for file in fileList:
+        zipObj.write("arguments/"+file)
+    zipObj.close()
+
+    path = "arguments.zip"
+
     return send_file(path, as_attachment=True)
     #delete .zip after returning
-'''
+
     
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
